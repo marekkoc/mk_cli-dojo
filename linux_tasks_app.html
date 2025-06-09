@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Command Tasks - Interactive Learning</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .task-card {
+            min-height: 400px;
+            transition: all 0.3s ease;
+        }
+        .difficulty-badge {
+            font-size: 0.9rem;
+        }
+        .rating-stars {
+            color: #ffc107;
+        }
+        .command-badge {
+            margin: 2px;
+        }
+        .tag-badge {
+            margin: 2px;
+        }
+        .solution-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+        }
+        .stats-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .add-task-form {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+        .speak-btn {
+            /* Removed - no longer needed */
+        }
+        body {
+            background-color: #f5f7fa;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        .btn-group-navigation {
+            gap: 10px;
+        }
+        .progress-indicator {
+            height: 4px;
+            background: linear-gradient(90deg, #007bff, #28a745);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <div class="row">
+            <!-- Main Task Display -->
+            <div class="col-lg-8">
+                <div class="card task-card">
+                    <div class="card-body position-relative">
+
+
+                        <!-- Task Header -->
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <h4 class="card-title">Task #<span id="currentTaskId">1</span></h4>
+                                <div class="mb-2">
+                                    <span class="badge bg-primary difficulty-badge me-2">
+                                        Difficulty: <span id="taskDifficulty">3</span>/5
+                                    </span>
+                                    <span class="rating-stars me-2">
+                                        <span id="taskRating">★★★☆☆</span>
+                                    </span>
+                                    <span class="badge bg-secondary" id="taskCategory">file management</span>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <div id="commandBadges" class="mb-2"></div>
+                                <small class="text-muted">⏱️ <span id="taskTime">< 1 min</span></small>
+                            </div>
+                        </div>
+
+                        <!-- Progress Indicator -->
+                        <div class="progress mb-3" style="height: 4px;">
+                            <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+                        </div>
+
+                        <!-- Task Description -->
+                        <div class="mb-4">
+                            <h5><i class="fas fa-tasks text-primary"></i> Task:</h5>
+                            <p class="lead" id="taskDescription">Loading task...</p>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="mb-3">
+                            <strong>Tags:</strong>
+                            <div id="taskTags" class="mt-1"></div>
+                        </div>
+
+                        <!-- Show/Hide Solution -->
+                        <div class="d-grid gap-2 mb-3">
+                            <button class="btn btn-success" id="toggleSolutionBtn" onclick="toggleSolution()">
+                                <i class="fas fa-eye"></i> Show Solution
+                            </button>
+                        </div>
+
+                        <!-- Solution (Hidden by default) -->
+                        <div id="solutionContainer" style="display: none;">
+                            <div class="solution-box p-3 rounded mb-3">
+                                <h5><i class="fas fa-terminal text-success"></i> Solution:</h5>
+                                <pre><code class="language-bash" id="taskSolution">find . -name "*.txt"</code></pre>
+                                
+                                <!-- Explanation Section -->
+                                <div class="mt-3" id="explanationSection">
+                                    <h6><i class="fas fa-lightbulb text-warning"></i> Explanation:</h6>
+                                    <p class="text-muted mb-0" id="taskExplanation">Command explanation will appear here...</p>
+                                </div>
+                            </div>
+
+                            <!-- Additional Info -->
+                            <div class="row">
+                                <div class="col-md-6" id="requirementsContainer">
+                                    <strong>Requirements:</strong>
+                                    <ul id="taskRequirements" class="mt-1"></ul>
+                                </div>
+                                <div class="col-md-6" id="warningsContainer">
+                                    <strong>⚠️ Warnings:</strong>
+                                    <p id="taskWarnings" class="text-warning mt-1"></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <strong>💡 Use Case:</strong>
+                                <p id="taskUseCase" class="text-muted"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center btn-group-navigation">
+                            <button class="btn btn-outline-secondary" onclick="previousTask()">
+                                <i class="fas fa-chevron-left"></i> Previous
+                            </button>
+                            
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-warning" onclick="randomTask()">
+                                    <i class="fas fa-random"></i> Random
+                                </button>
+                                <button class="btn btn-info" onclick="resetProgress()">
+                                    <i class="fas fa-refresh"></i> Reset
+                                </button>
+                            </div>
+                            
+                            <button class="btn btn-outline-secondary" onclick="nextTask()">
+                                Next <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Statistics -->
+                <div class="card stats-card mb-3">
+                    <div class="card-body text-center">
+                        <h5><i class="fas fa-chart-bar"></i> Progress</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3 id="tasksCompleted">0</h3>
+                                <small>Completed</small>
+                            </div>
+                            <div class="col-6">
+                                <h3 id="totalTasks">75</h3>
+                                <small>Total Tasks</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5><i class="fas fa-filter"></i> Filters</h5>
+                        <div class="mb-3">
+                            <label class="form-label">Difficulty:</label>
+                            <select class="form-select" id="difficultyFilter" onchange="applyFilters()">
+                                <option value="">All Levels</option>
+                                <option value="1">1 - Beginner</option>
+                                <option value="2">2 - Easy</option>
+                                <option value="3">3 - Medium</option>
+                                <option value="4">4 - Hard</option>
+                                <option value="5">5 - Expert</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Category:</label>
+                            <select class="form-select" id="categoryFilter" onchange="applyFilters()">
+                                <option value="">All Categories</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Command:</label>
+                            <select class="form-select" id="commandFilter" onchange="applyFilters()">
+                                <option value="">All Commands</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load Tasks -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5><i class="fas fa-file-upload"></i> Load Tasks</h5>
+                        <input type="file" class="form-control mb-2" id="jsonFileInput" accept=".json" onchange="loadFromFile(event)">
+                        <button class="btn btn-primary w-100" onclick="loadDefaultTasks()">
+                            Load Default Tasks
+                        </button>
+                        <small class="text-muted d-block mt-2">Default: linux_tasks_database.json</small>
+                    </div>
+                </div>
+                <!-- Add New Task -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5><i class="fas fa-plus"></i> Add New Task</h5>
+                        <button class="btn btn-success w-100" data-bs-toggle="collapse" data-bs-target="#addTaskForm">
+                            Create New Task
+                        </button>
+                        
+                        <div class="collapse mt-3" id="addTaskForm">
+                            <form onsubmit="addNewTask(event)" class="add-task-form p-3">
+                                <div class="mb-2">
+                                    <input type="text" class="form-control form-control-sm" id="newTaskTitle" placeholder="Task description" required>
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control form-control-sm" id="newTaskSolution" placeholder="Solution command" required></textarea>
+                                </div>
+                                <div class="mb-2">
+                                    <textarea class="form-control form-control-sm" id="newTaskExplanation" placeholder="Detailed explanation of the solution" rows="3"></textarea>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <select class="form-select form-select-sm" id="newTaskDifficulty" required>
+                                            <option value="">Difficulty</option>
+                                            <option value="1">1 - Beginner</option>
+                                            <option value="2">2 - Easy</option>
+                                            <option value="3">3 - Medium</option>
+                                            <option value="4">4 - Hard</option>
+                                            <option value="5">5 - Expert</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <select class="form-select form-select-sm" id="newTaskRating" required>
+                                            <option value="">Rating</option>
+                                            <option value="1">★ (1)</option>
+                                            <option value="2">★★ (2)</option>
+                                            <option value="3">★★★ (3)</option>
+                                            <option value="4">★★★★ (4)</option>
+                                            <option value="5">★★★★★ (5)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control form-control-sm" id="newTaskCategory" placeholder="Category" required>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control form-control-sm" id="newTaskCommands" placeholder="Commands (comma separated)" required>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control form-control-sm" id="newTaskTags" placeholder="Tags (comma separated)" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-sm w-100">Add Task</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <script>
+        // Sample data - you would load your JSON files here
+        let tasks = [];
+        let currentTaskIndex = 0;
+        let completedTasks = new Set();
+        let filteredTasks = [];
+
+        // Initialize app
+        async function initApp() {
+            // Load default tasks
+            await loadDefaultTasks();
+        }
+
+        // Load default tasks from linux_tasks_database.json
+        async function loadDefaultTasks() {
+            try {
+                const response = await fetch('linux_tasks_database.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load default tasks file');
+                }
+                const data = await response.json();
+                tasks = data.tasks || [];
+                filteredTasks = [...tasks];
+                populateFilters();
+                if (tasks.length > 0) {
+                    displayTask(0);
+                }
+                updateStats();
+                showMessage('Default tasks loaded successfully!', 'success');
+            } catch (error) {
+                console.error('Error loading default tasks:', error);
+                // Load sample data if default file not found
+                tasks = getSampleTasks();
+                filteredTasks = [...tasks];
+                populateFilters();
+                displayTask(0);
+                updateStats();
+                showMessage('Default file not found. Loaded sample tasks.', 'warning');
+            }
+        }
+
+        // Load tasks from uploaded file
+        function loadFromFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    tasks = data.tasks || [];
+                    filteredTasks = [...tasks];
+                    populateFilters();
+                    if (tasks.length > 0) {
+                        displayTask(0);
+                    }
+                    updateStats();
+                    showMessage(`Successfully loaded ${tasks.length} tasks from ${file.name}`, 'success');
+                } catch (error) {
+                    showMessage('Error parsing JSON file. Please check the file format.', 'danger');
+                    console.error('JSON parse error:', error);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        // Load tasks button action (removed - no longer needed)
+        function loadTasksFromFile() {
+            // Function removed - use sidebar upload instead
+        }
+
+        // Show message to user
+        function showMessage(message, type = 'info') {
+            // Create toast-like message
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+            alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+            alertDiv.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            document.body.appendChild(alertDiv);
+            
+            // Auto-remove after 4 seconds
+            setTimeout(() => {
+                if (alertDiv.parentNode) {
+                    alertDiv.remove();
+                }
+            }, 4000);
+        }
+
+        // Get sample tasks (fallback data)
+        function getSampleTasks() {
+            return [
+                {
+                    "id": 1,
+                    "command": ["find"],
+                    "difficulty": 2,
+                    "rating": 3,
+                    "category": "file management",
+                    "tags": ["size", "modification", "cleanup"],
+                    "task": "Find all files in home directory modified in last 7 days and larger than 10MB",
+                    "solution": "find ~ -type f -mtime -7 -size +10M",
+                    "explanation": "find ~ (search in home directory) -type f (files only, not directories) -mtime -7 (modified within last 7 days, negative value means 'less than') -size +10M (size greater than 10 megabytes)",
+                    "execution_time": "< 1 min",
+                    "requirements": null,
+                    "warnings": null,
+                    "use_case": "Identify large files that were recently created or modified for cleanup"
+                },
+                {
+                    "id": 2,
+                    "command": ["grep"],
+                    "difficulty": 2,
+                    "rating": 2,
+                    "category": "text processing",
+                    "tags": ["email", "regex", "validation"],
+                    "task": "Find all email addresses in text files",
+                    "solution": "grep -r -E '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}' .",
+                    "explanation": "grep -r (recursive search through directories) -E (extended regex) with email pattern: [a-zA-Z0-9._%+-]+ (username part) @ (literal @) [a-zA-Z0-9.-]+ (domain name) \\. (literal dot) [a-zA-Z]{2,} (domain extension, 2+ chars)",
+                    "execution_time": "< 1 min",
+                    "requirements": null,
+                    "warnings": null,
+                    "use_case": "Extract contact information from documents or logs"
+                }
+            ];
+        }
+
+        function displayTask(index) {
+            if (filteredTasks.length === 0) return;
+            
+            const task = filteredTasks[index];
+            currentTaskIndex = index;
+
+            // Update UI elements
+            document.getElementById('currentTaskId').textContent = task.id;
+            document.getElementById('taskDifficulty').textContent = task.difficulty;
+            document.getElementById('taskRating').textContent = '★'.repeat(task.rating) + '☆'.repeat(5 - task.rating);
+            document.getElementById('taskCategory').textContent = task.category;
+            document.getElementById('taskDescription').textContent = task.task;
+            document.getElementById('taskSolution').textContent = task.solution;
+            document.getElementById('taskExplanation').textContent = task.explanation || 'No detailed explanation available for this task.';
+            document.getElementById('taskTime').textContent = task.execution_time;
+            document.getElementById('taskUseCase').textContent = task.use_case;
+
+            // Update progress bar
+            const progress = ((index + 1) / filteredTasks.length) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+
+            // Update command badges
+            const commandBadges = document.getElementById('commandBadges');
+            commandBadges.innerHTML = task.command.map(cmd => 
+                `<span class="badge bg-info command-badge">${cmd}</span>`
+            ).join('');
+
+            // Update tags
+            const tagContainer = document.getElementById('taskTags');
+            tagContainer.innerHTML = task.tags.map(tag => 
+                `<span class="badge bg-light text-dark tag-badge">${tag}</span>`
+            ).join('');
+
+            // Update requirements
+            const reqContainer = document.getElementById('requirementsContainer');
+            const reqList = document.getElementById('taskRequirements');
+            if (task.requirements) {
+                reqList.innerHTML = task.requirements.map(req => `<li>${req}</li>`).join('');
+                reqContainer.style.display = 'block';
+            } else {
+                reqContainer.style.display = 'none';
+            }
+
+            // Update warnings
+            const warnContainer = document.getElementById('warningsContainer');
+            const warnText = document.getElementById('taskWarnings');
+            if (task.warnings) {
+                warnText.textContent = task.warnings;
+                warnContainer.style.display = 'block';
+            } else {
+                warnContainer.style.display = 'none';
+            }
+
+            // Hide solution by default
+            document.getElementById('solutionContainer').style.display = 'none';
+            document.getElementById('toggleSolutionBtn').innerHTML = '<i class="fas fa-eye"></i> Show Solution';
+
+            // Highlight syntax
+            Prism.highlightAll();
+        }
+
+        function nextTask() {
+            if (currentTaskIndex < filteredTasks.length - 1) {
+                displayTask(currentTaskIndex + 1);
+            }
+        }
+
+        function previousTask() {
+            if (currentTaskIndex > 0) {
+                displayTask(currentTaskIndex - 1);
+            }
+        }
+
+        function randomTask() {
+            const randomIndex = Math.floor(Math.random() * filteredTasks.length);
+            displayTask(randomIndex);
+        }
+
+        function toggleSolution() {
+            const container = document.getElementById('solutionContainer');
+            const btn = document.getElementById('toggleSolutionBtn');
+            
+            if (container.style.display === 'none') {
+                container.style.display = 'block';
+                btn.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Solution';
+                completedTasks.add(filteredTasks[currentTaskIndex].id);
+                updateStats();
+            } else {
+                container.style.display = 'none';
+                btn.innerHTML = '<i class="fas fa-eye"></i> Show Solution';
+            }
+        }
+
+        function speakTask() {
+            // Function removed - speech functionality not needed
+        }
+
+        function populateFilters() {
+            // Populate category filter
+            const categories = [...new Set(tasks.map(task => task.category))].sort();
+            const categoryFilter = document.getElementById('categoryFilter');
+            categoryFilter.innerHTML = '<option value="">All Categories</option>' +
+                categories.map(cat => `<option value="${cat}">${cat}</option>`).join('');
+
+            // Populate command filter
+            const commands = [...new Set(tasks.flatMap(task => task.command))].sort();
+            const commandFilter = document.getElementById('commandFilter');
+            commandFilter.innerHTML = '<option value="">All Commands</option>' +
+                commands.map(cmd => `<option value="${cmd}">${cmd}</option>`).join('');
+        }
+
+        function applyFilters() {
+            const difficultyFilter = document.getElementById('difficultyFilter').value;
+            const categoryFilter = document.getElementById('categoryFilter').value;
+            const commandFilter = document.getElementById('commandFilter').value;
+
+            filteredTasks = tasks.filter(task => {
+                const matchesDifficulty = !difficultyFilter || task.difficulty.toString() === difficultyFilter;
+                const matchesCategory = !categoryFilter || task.category === categoryFilter;
+                const matchesCommand = !commandFilter || task.command.includes(commandFilter);
+                
+                return matchesDifficulty && matchesCategory && matchesCommand;
+            });
+
+            currentTaskIndex = 0;
+            if (filteredTasks.length > 0) {
+                displayTask(0);
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('tasksCompleted').textContent = completedTasks.size;
+            document.getElementById('totalTasks').textContent = tasks.length;
+        }
+
+        function resetProgress() {
+            completedTasks.clear();
+            updateStats();
+            currentTaskIndex = 0;
+            displayTask(0);
+        }
+
+        function addNewTask(event) {
+            event.preventDefault();
+            
+            const newTask = {
+                id: Math.max(...tasks.map(t => t.id)) + 1,
+                command: document.getElementById('newTaskCommands').value.split(',').map(s => s.trim()),
+                difficulty: parseInt(document.getElementById('newTaskDifficulty').value),
+                rating: parseInt(document.getElementById('newTaskRating').value),
+                category: document.getElementById('newTaskCategory').value,
+                tags: document.getElementById('newTaskTags').value.split(',').map(s => s.trim()),
+                task: document.getElementById('newTaskTitle').value,
+                solution: document.getElementById('newTaskSolution').value,
+                explanation: document.getElementById('newTaskExplanation').value || null,
+                execution_time: "< 1 min",
+                requirements: null,
+                warnings: null,
+                use_case: "User-defined task"
+            };
+
+            tasks.push(newTask);
+            filteredTasks = [...tasks];
+            populateFilters();
+            
+            // Clear form
+            document.getElementById('addTaskForm').reset();
+            document.querySelector('[data-bs-toggle="collapse"]').click();
+            
+            // Show the new task
+            displayTask(tasks.length - 1);
+            updateStats();
+            
+            alert('Task added successfully!');
+        }
+
+        // Initialize app when page loads
+        document.addEventListener('DOMContentLoaded', initApp);
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') previousTask();
+            if (e.key === 'ArrowRight') nextTask();
+            if (e.key === ' ') { e.preventDefault(); toggleSolution(); }
+            if (e.key === 'r') randomTask();
+        });
+    </script>
+</body>
+</html>

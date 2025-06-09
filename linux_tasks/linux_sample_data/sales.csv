@@ -1,0 +1,11 @@
+date,salesperson,region,amount,product
+2024-01-15,John,North,1500,Software
+2024-01-16,Jane,South,2000,Hardware
+2024-01-17,Bob,East,1200,Software
+2024-01-18,Alice,West,1800,Services
+2024-01-19,Charlie,North,950,Hardware
+2024-01-20,David,South,2200,Software
+2024-01-21,Emma,East,1100,Services
+2024-01-22,Frank,West,1650,Hardware
+2024-01-23,Grace,North,1350,Software
+2024-01-24,Henry,South,1750,Services

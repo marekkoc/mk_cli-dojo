@@ -1,0 +1,10 @@
+Version 1.0.0
+Build 100
+Port 8080
+Timeout 30
+MaxUsers 50
+Buffer 1024
+Threads 4
+Retries 3
+Delay 500
+Priority 1

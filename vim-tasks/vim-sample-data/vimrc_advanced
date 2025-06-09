@@ -1,0 +1,79 @@
+" Advanced VIM configuration template
+" Copy to ~/.vimrc for advanced features
+
+" Enable pathogen for plugin management
+execute pathogen#infect()
+
+" Basic settings (from basic config)
+set number relativenumber
+set tabstop=4 shiftwidth=4 expandtab
+set autoindent smartindent
+set ignorecase smartcase
+set hlsearch incsearch
+syntax on
+set showcmd showmatch ruler laststatus=2
+
+" Advanced settings
+set hidden               " Allow hidden buffers
+set history=1000         " Command history
+set undolevels=1000      " Undo history
+set undofile             " Persistent undo
+set undodir=~/.vim/undo  " Undo directory
+set backup               " Enable backups
+set backupdir=~/.vim/backup  " Backup directory
+set directory=~/.vim/swap    " Swap file directory
+
+" Visual enhancements
+set cursorline           " Highlight current line
+set colorcolumn=80       " Show column at 80 characters
+set scrolloff=5          " Keep 5 lines above/below cursor
+set sidescrolloff=5      " Keep 5 columns left/right of cursor
+
+" Advanced key mappings
+let mapleader = ","                      " Set leader key
+nnoremap <leader>w :w<CR>                " Quick save
+nnoremap <leader>q :q<CR>                " Quick quit
+nnoremap <leader>h :nohlsearch<CR>       " Clear search highlight
+nnoremap <leader>ev :e $MYVIMRC<CR>      " Edit vimrc
+nnoremap <leader>sv :source $MYVIMRC<CR> " Source vimrc
+
+" Window navigation
+nnoremap <C-h> <C-w>h    " Move to left window
+nnoremap <C-j> <C-w>j    " Move to bottom window
+nnoremap <C-k> <C-w>k    " Move to top window
+nnoremap <C-l> <C-w>l    " Move to right window
+
+" Buffer navigation
+nnoremap <leader>bn :bnext<CR>           " Next buffer
+nnoremap <leader>bp :bprevious<CR>       " Previous buffer
+nnoremap <leader>bd :bdelete<CR>         " Delete buffer
+
+" Custom functions
+function! ToggleNumber()
+    if &number
+        set nonumber norelativenumber
+    else
+        set number relativenumber
+    endif
+endfunction
+nnoremap <F3> :call ToggleNumber()<CR>
+
+" Auto commands for different file types
+augroup filetype_settings
+    autocmd!
+    autocmd FileType python setlocal foldmethod=indent
+    autocmd FileType html,css,javascript setlocal tabstop=2 shiftwidth=2
+    autocmd FileType vim setlocal foldmethod=marker
+    autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+augroup END
+
+" Status line customization
+set statusline=%f         " Filename
+set statusline+=%m        " Modified flag
+set statusline+=%r        " Readonly flag
+set statusline+=%h        " Help flag
+set statusline+=%w        " Preview flag
+set statusline+=%=        " Left/right separator
+set statusline+=%c,       " Cursor column
+set statusline+=%l/%L     " Cursor line/total lines
+set statusline+=\ %P      " Percent through file

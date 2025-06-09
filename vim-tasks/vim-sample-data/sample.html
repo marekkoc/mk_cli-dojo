@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice's Adventures - VIM Practice</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .quote {
+            font-style: italic;
+            color: #7f8c8d;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Alice's Adventures</h1>
+        <h2>A VIM Practice Environment</h2>
+    </div>
+    
+    <div class="content">
+        <h3>VIM Learning Objectives</h3>
+        <ul>
+            <li>Master basic navigation (hjkl, w, b, e)</li>
+            <li>Learn text editing commands (d, y, p, c)</li>
+            <li>Practice search and replace operations</li>
+            <li>Understand visual mode selections</li>
+            <li>Work with multiple files and windows</li>
+        </ul>
+        
+        <div class="quote">
+            "Alice was beginning to get very tired of sitting by her sister on the bank..."
+        </div>
+        
+        <h3>Advanced Features to Explore</h3>
+        <ol>
+            <li>Macros and automation</li>
+            <li>Registers and clipboard operations</li>
+            <li>Custom .vimrc configuration</li>
+            <li>Plugin management</li>
+            <li>Diff mode and file comparison</li>
+        </ol>
+        
+        <p>Practice these features using the provided text files and coding examples.</p>
+    </div>
+    
+    <script>
+        // Simple JavaScript for demonstration
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Alice\'s Adventures VIM practice page loaded');
+            
+            // Add click handler to headers
+            const headers = document.querySelectorAll('h1, h2, h3');
+            headers.forEach(header => {
+                header.addEventListener('click', function() {
+                    this.style.color = this.style.color === 'red' ? '' : 'red';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "orders": [
+    {
+      "id": "ORD-001",
+      "customer": {
+        "name": "John Smith",
+        "email": "john@example.com"
+      },
+      "billing": {
+        "total": 1500.00,
+        "currency": "USD"
+      },
+      "items": [
+        {"name": "Laptop", "price": 1200},
+        {"name": "Mouse", "price": 25}
+      ]
+    },
+    {
+      "id": "ORD-002",
+      "customer": {
+        "name": "Jane Doe",
+        "email": "jane@example.com"
+      },
+      "billing": {
+        "total": 800.00,
+        "currency": "USD"
+      },
+      "items": [
+        {"name": "Smartphone", "price": 800}
+      ]
+    }
+  ]
+}

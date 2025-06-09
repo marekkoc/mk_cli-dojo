@@ -1,0 +1,8 @@
+"Hello, world!" she said with a smile.
+The config file contains 'debug=true' and 'verbose=false'.
+Alice thought "What is the use of a book without pictures?"
+Variables like $HOME and $PATH are important.
+HTML tags: <div class="container">content</div>
+Function call: process_data(input, output, options)
+Array access: items[0], items[1], items[2]
+JSON: {"name": "Alice", "age": 25, "city": "Wonderland"}

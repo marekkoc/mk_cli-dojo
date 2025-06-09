@@ -1,0 +1,22 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Premium Corp",
+      "orderTotal": 1500,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Gold Industries",
+      "orderTotal": 750,
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Standard LLC",
+      "orderTotal": 200,
+      "status": "active"
+    }
+  ]
+}

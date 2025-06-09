@@ -1,0 +1,9 @@
+Name        Age  City          Salary
+John        25   New York      50000
+Jane        30   London        60000
+Bob         28   Paris         55000
+Alice       35   Tokyo         70000
+Charlie     22   Berlin        45000
+Diana       29   Sydney        65000
+Eve         31   Toronto       58000
+Frank       27   Madrid        52000

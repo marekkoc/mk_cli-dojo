@@ -1,0 +1,40 @@
+" Basic VIM configuration template
+" Copy to ~/.vimrc to use
+
+" Basic settings
+set number                " Show line numbers
+set relativenumber        " Show relative line numbers
+set tabstop=4            " Number of spaces for tab
+set shiftwidth=4         " Number of spaces for indentation
+set expandtab            " Use spaces instead of tabs
+set autoindent           " Auto-indent new lines
+set smartindent          " Smart indentation
+
+" Search settings
+set ignorecase           " Ignore case in search
+set smartcase            " Case-sensitive if uppercase used
+set hlsearch             " Highlight search results
+set incsearch            " Incremental search
+
+" Visual settings
+syntax on                " Enable syntax highlighting
+set showcmd              " Show command in bottom bar
+set showmatch            " Highlight matching brackets
+set ruler                " Show cursor position
+set laststatus=2         " Always show status line
+
+" Behavior settings
+set backspace=indent,eol,start  " Allow backspace in insert mode
+set wildmenu             " Enhanced command completion
+set wildmode=longest:full,full  " Command completion mode
+
+" Key mappings
+nnoremap <F2> :w<CR>                    " F2 to save
+inoremap jk <Esc>                       " jk to exit insert mode
+nnoremap <leader>n :set number!<CR>     " Toggle line numbers
+
+" Auto commands
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 expandtab
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd BufWritePre * :%s/\s\+$//e      " Remove trailing whitespace on save

@@ -1,0 +1,11 @@
+customer_id,company_name,order_total,status,region
+001,Acme Corp,1500,active,North
+002,Beta Industries,800,active,South
+003,Gamma Solutions,2000,active,East
+004,Delta Systems,450,inactive,West
+005,Alpha Technologies,1200,active,North
+006,Omega Services,300,active,South
+007,Sigma Products,1800,active,East
+008,Theta Consulting,950,active,West
+009,Lambda Enterprises,2500,active,North
+010,Kappa Industries,600,inactive,South

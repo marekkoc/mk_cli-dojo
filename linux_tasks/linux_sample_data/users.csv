@@ -1,0 +1,5 @@
+id,name,email,status
+1,John Smith,john@example.com,active
+2,Jane Doe,jane@example.com,active
+3,Bob Johnson,bob@example.com,inactive
+4,Alice Brown,alice@example.com,active

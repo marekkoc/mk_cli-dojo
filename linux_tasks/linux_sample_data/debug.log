@@ -1,0 +1,6 @@
+2024-01-15 10:30:00 DEBUG SQL: SELECT * FROM users WHERE active=1
+2024-01-15 10:30:15 DEBUG Cache hit for key: user_sessions
+2024-01-15 10:30:30 DEBUG SQL: UPDATE orders SET status='completed' WHERE id=123
+2024-01-15 10:31:00 DEBUG Performance: Query executed in 0.05ms
+2024-01-15 10:31:30 DEBUG SQL: INSERT INTO audit_log VALUES (...)
+2024-01-15 10:32:00 DEBUG Memory usage: 512MB

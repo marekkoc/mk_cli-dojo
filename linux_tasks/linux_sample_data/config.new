@@ -1,8 +1,0 @@
-server.host=0.0.0.0
-server.port=8080
-database.url=jdbc:mysql://localhost:3306/newdb
-database.user=appuser
-database.pool.size=10
-logging.level=DEBUG
-cache.enabled=true
-cache.ttl=3600

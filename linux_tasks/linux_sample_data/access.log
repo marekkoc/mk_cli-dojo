@@ -1,8 +1,0 @@
-192.168.1.100 - - [15/Jan/2024:10:30:45 +0000] "GET /index.html HTTP/1.1" 200 2048 "Mozilla/5.0"
-10.0.0.50 - - [15/Jan/2024:10:31:12 +0000] "POST /api/login HTTP/1.1" 401 512 "curl/7.68.0"
-192.168.1.100 - - [15/Jan/2024:10:31:45 +0000] "GET /dashboard HTTP/1.1" 200 4096 "Mozilla/5.0"
-203.0.113.25 - - [15/Jan/2024:10:32:30 +0000] "GET /admin HTTP/1.1" 403 256 "BadBot/1.0"
-192.168.1.100 - - [15/Jan/2024:10:33:15 +0000] "POST /api/data HTTP/1.1" 500 1024 "Mozilla/5.0"
-10.0.0.75 - - [15/Jan/2024:10:34:00 +0000] "GET /images/logo.png HTTP/1.1" 200 8192 "Mozilla/5.0"
-198.51.100.44 - - [15/Jan/2024:10:34:45 +0000] "GET /search?q=<script>alert('xss')</script> HTTP/1.1" 400 512 "AttackBot/2.0"
-192.168.1.100 - - [15/Jan/2024:10:35:30 +0000] "GET /profile HTTP/1.1" 200 3072 "Mozilla/5.0"

@@ -1,0 +1,6 @@
+John Doe - john@company.com - (555) 123-4567
+Jane Smith - jane@company.com - (555) 234-5678
+Bob Johnson - bob@company.com - (555) 345-6789
+Alice Brown - alice@company.com - (555) 456-7890
+Charlie Davis - charlie@company.com - (555) 567-8901
+Total lines: 6

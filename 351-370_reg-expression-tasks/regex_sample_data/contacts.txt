@@ -1,0 +1,10 @@
+John Doe - john.doe@example.com - +1-555-123-4567 - Manager
+Jane Smith - jane_smith@domain.net - (555) 987-6543 - Developer  
+Bob Wilson - bob.wilson@test.co.uk - +44-20-7123-4567 - Designer
+Alice Cooper - alice.cooper@music.com - 555.456.7890 - Artist
+Mike Johnson - mike@company.org - +1 (555) 234-5678 - Sales
+Sarah Davis - s.davis@email.net - 555-777-8888 - HR
+Tom Brown - tom.brown@firm.com - +1.555.999.0000 - Legal
+Lisa Green - lisa_green@startup.io - (555) 111-2222 - CTO
+David Miller - d.miller@corp.biz - +1-555-333-4444 - CFO
+Emma White - emma@agency.co - 555/666/7777 - Marketing

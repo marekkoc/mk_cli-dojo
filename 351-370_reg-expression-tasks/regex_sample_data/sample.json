@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+1-555-123-4567",
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "zipcode": "10001"
+      },
+      "created_at": "2024-01-15T10:30:45Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@domain.net",
+      "phone": "(555) 987-6543",
+      "address": {
+        "street": "456 Oak Ave",
+        "city": "Los Angeles",
+        "zipcode": "90210"
+      },
+      "created_at": "2024-01-16T14:22:30Z"
+    }
+  ],
+  "metadata": {
+    "total_count": 2,
+    "api_version": "v1.2.3",
+    "timestamp": "2024-01-15T10:30:45Z"
+  }
+}

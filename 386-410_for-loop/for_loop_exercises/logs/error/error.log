@@ -1,0 +1,5 @@
+2024-01-15 10:02:00 ERROR Database connection timeout
+2024-01-15 10:15:00 ERROR SMTP server unavailable
+2024-01-15 10:30:00 ERROR Invalid user credentials
+2024-01-15 10:45:00 ERROR File not found: /missing/file.txt
+2024-01-15 11:00:00 ERROR Permission denied: /protected/data

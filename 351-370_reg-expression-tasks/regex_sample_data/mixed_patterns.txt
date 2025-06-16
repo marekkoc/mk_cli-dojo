@@ -1,0 +1,16 @@
+Credit Card Numbers (masked): 4532-****-****-1234, 5555-****-****-4444
+Social Security: XXX-XX-1234, XXX-XX-5678
+Phone Numbers: +1-555-123-4567, (555) 987-6543, 555.456.7890
+IP Addresses: 192.168.1.1, 10.0.0.255, 172.16.254.1
+MAC Addresses: 00:1B:44:11:3A:B7, AA:BB:CC:DD:EE:FF
+URLs: https://www.example.com, http://test.org/path?param=value
+File Paths: /home/user/documents/file.txt, C:\Users\John\Desktop\report.pdf
+Timestamps: 2024-01-15T10:30:45Z, 15/01/2024 10:30:45, Jan 15, 2024 10:30 AM
+Version Numbers: v1.2.3, 2.0.1-beta, 3.14.159-alpha.2
+License Plates: ABC-123, XYZ-789, 123-DEF
+Hex Colors: #FF5733, #C70039, #900C3F, #581845
+Binary Numbers: 101010, 11110000, 10101010
+Hexadecimal: 0xFF, 0x1A2B, 0xDEADBEEF
+UUIDs: 550e8400-e29b-41d4-a716-446655440000
+API Keys: sk-1234567890abcdef, pk_test_abc123def456
+Hash Values: 5d41402abc4b2a76b9719d911017c592, a1b2c3d4e5f6789

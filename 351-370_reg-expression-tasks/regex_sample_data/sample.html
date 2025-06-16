@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Information</h1>
+        <div class="contact-card">
+            <h2>John Doe</h2>
+            <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+            <p>Phone: <a href="tel:+1-555-123-4567">+1-555-123-4567</a></p>
+        </div>
+        <div class="contact-card">
+            <h2>Jane Smith</h2>
+            <p>Email: <a href="mailto:jane.smith@domain.net">jane.smith@domain.net</a></p>
+            <p>Phone: <a href="tel:555-987-6543">(555) 987-6543</a></p>
+        </div>
+    </div>
+    <script>
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const phonePattern = /^\+?[\d\s\-\(\)\.]+$/;
+    </script>
+</body>
+</html>

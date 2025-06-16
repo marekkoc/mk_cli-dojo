@@ -1,0 +1,6 @@
+2024-01-15 09:00:00 INFO System boot completed
+2024-01-15 09:05:00 INFO Network interface up
+2024-01-15 09:10:00 WARN Disk usage above 80%
+2024-01-15 09:15:00 INFO Cron job executed
+2024-01-15 09:20:00 ERROR Service failed to start
+2024-01-15 09:25:00 INFO Service restarted successfully

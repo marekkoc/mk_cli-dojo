@@ -1,0 +1,8 @@
+Version 1.0.0 - Initial release
+Version 1.0.1 - Bug fixes
+Version 1.1.0 - New features added
+Version 1.1.1 - Performance improvements
+Version 2.0.0 - Major update
+Version 2.0.1 - Security patches
+Version 2.1.0 - UI improvements
+Total lines: 8

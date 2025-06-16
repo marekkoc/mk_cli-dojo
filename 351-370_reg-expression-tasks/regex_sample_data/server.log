@@ -1,0 +1,13 @@
+2024-01-15 10:30:45 [INFO] User john.doe@example.com logged in from 192.168.1.100
+2024-01-15 10:31:02 [ERROR] Failed login attempt for admin@company.org from 10.0.0.50
+2024-01-15 10:31:15 [WARN] High memory usage: 85% on server web-01
+2024-01-15 10:32:01 [INFO] User jane_smith@domain.net logged in from 172.16.0.25
+2024-01-15 10:32:30 [ERROR] Database connection failed: timeout after 30 seconds
+2024-01-15 10:33:12 [INFO] User bob.wilson@test.co.uk logged out
+2024-01-15 10:34:00 [WARN] Disk space low: 92% on /var/log partition
+2024-01-15 10:35:15 [ERROR] 404 Not Found: /api/v1/users/12345
+2024-01-15 10:36:00 [INFO] Backup completed successfully in 2.5 minutes
+2024-01-15 10:37:22 [WARN] SSL certificate expires in 7 days
+2024-01-15 10:38:01 [INFO] User alice.cooper@music.com logged in from 203.0.113.42
+2024-01-15 10:39:15 [ERROR] Invalid API key: sk-abc123def456ghi789
+2024-01-15 10:40:00 [INFO] System reboot scheduled for 2024-01-16 02:00:00

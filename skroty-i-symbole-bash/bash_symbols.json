@@ -1,0 +1,206 @@
+{
+  "bash_symbols_and_shortcuts": {
+    "categories": {
+      "nawigacja_i_sciezki": {
+        "description": "Nawigacja i zastępowanie ścieżek",
+        "symbols": {
+          "~": "katalog domowy użytkownika (~/ = /home/username/)",
+          "~user": "katalog domowy określonego użytkownika",
+          "-": "poprzedni katalog (cd -)",
+          ".": "bieżący katalog",
+          "..": "katalog nadrzędny",
+          "/": "katalog główny (root)"
+        }
+      },
+      "przekierowania_i_rurki": {
+        "description": "Przekierowania i rurki",
+        "symbols": {
+          ">": "przekierowanie stdout do pliku (nadpisanie)",
+          ">>": "przekierowanie stdout do pliku (dopisanie)",
+          "<": "przekierowanie stdin z pliku",
+          "|": "pipe (przekazanie wyjścia jako wejście)",
+          "2>": "przekierowanie stderr do pliku",
+          "&>": "przekierowanie stdout i stderr",
+          ">&": "przekierowanie stdout i stderr (alternatywna składnia)",
+          "2>&1": "przekierowanie stderr do stdout",
+          "<<": "here document",
+          "<<<": "here string",
+          "|&": "pipe stdout i stderr"
+        }
+      },
+      "wildcards_globbing": {
+        "description": "Wildcards (globbing)",
+        "symbols": {
+          "*": "dowolny ciąg znaków (zero lub więcej)",
+          "?": "jeden dowolny znak",
+          "[abc]": "jeden ze znaków a, b lub c",
+          "[a-z]": "jeden znak z zakresu a-z",
+          "[!abc]": "dowolny znak oprócz a, b, c",
+          "[^abc]": "dowolny znak oprócz a, b, c (alternatywna składnia)",
+          "{a,b,c}": "rozwinięcie nawiasów (brace expansion)",
+          "{1..10}": "sekwencja liczb od 1 do 10",
+          "{a..z}": "sekwencja liter od a do z"
+        }
+      },
+      "zmienne_i_podstawienia": {
+        "description": "Zmienne i podstawienia",
+        "symbols": {
+          "$var": "wartość zmiennej",
+          "${var}": "wartość zmiennej (pełna składnia)",
+          "${var:-default}": "użyj wartości lub default jeśli pusta",
+          "${var:=default}": "ustaw i użyj default jeśli pusta",
+          "${var:?error}": "wyświetl błąd jeśli zmienna pusta",
+          "${var:+alt_value}": "użyj alt_value jeśli var niepusta",
+          "${#var}": "długość zmiennej",
+          "${var%pattern}": "usuń najkrótsze dopasowanie z końca",
+          "${var%%pattern}": "usuń najdłuższe dopasowanie z końca",
+          "${var#pattern}": "usuń najkrótsze dopasowanie z początku",
+          "${var##pattern}": "usuń najdłuższe dopasowanie z początku",
+          "${var/pattern/replacement}": "zamień pierwsze wystąpienie",
+          "${var//pattern/replacement}": "zamień wszystkie wystąpienia"
+        }
+      },
+      "podstawienia_komend": {
+        "description": "Podstawienia komend",
+        "symbols": {
+          "$(command)": "podstawienie komendy (nowoczesne)",
+          "`command`": "podstawienie komendy (starsze)",
+          "$((expression))": "arytmetyka całkowitoliczbowa",
+          "$[expression]": "arytmetyka (przestarzałe)"
+        }
+      },
+      "zmienne_specjalne": {
+        "description": "Zmienne specjalne",
+        "symbols": {
+          "$0": "nazwa skryptu/shella",
+          "$1, $2, $3...": "argumenty pozycyjne",
+          "$#": "liczba argumentów",
+          "$@": "wszystkie argumenty jako oddzielne słowa",
+          "$*": "wszystkie argumenty jako jedno słowo",
+          "$$": "PID bieżącego procesu",
+          "$!": "PID ostatniego procesu w tle",
+          "$?": "kod wyjścia ostatniej komendy",
+          "$_": "ostatni argument poprzedniej komendy"
+        }
+      },
+      "historia_komend": {
+        "description": "Historia komend",
+        "symbols": {
+          "!!": "ostatnia komenda",
+          "!n": "komenda numer n z historii",
+          "!string": "ostatnia komenda zaczynająca się od string",
+          "!?string": "ostatnia komenda zawierająca string",
+          "^old^new": "zamień old na new w ostatniej komendzie",
+          "!$": "ostatni argument ostatniej komendy",
+          "!^": "pierwszy argument ostatniej komendy",
+          "!*": "wszystkie argumenty ostatniej komendy"
+        }
+      },
+      "operatory_logiczne": {
+        "description": "Operatory logiczne i łączenie",
+        "symbols": {
+          "&&": "AND (wykonaj jeśli poprzednia komenda się powiodła)",
+          "||": "OR (wykonaj jeśli poprzednia komenda się nie powiodła)",
+          ";": "separator komend (wykonaj niezależnie)",
+          "&": "uruchom w tle",
+          "()": "grupowanie komend w subshell",
+          "{}": "grupowanie komend w bieżącym shell"
+        }
+      },
+      "cudzysłowy_i_escape": {
+        "description": "Cudzysłowy i escape",
+        "symbols": {
+          "'single'": "dosłowny tekst (bez interpretacji)",
+          "\"double\"": "interpretacja zmiennych ale nie globbing",
+          "\\": "escape pojedynczego znaku",
+          "$'string'": "interpretacja sekwencji escape (\\n, \\t, itp.)"
+        }
+      },
+      "porownania_w_testach": {
+        "description": "Porównania w testach",
+        "symbols": {
+          "-eq": "równe (liczby)",
+          "-ne": "różne (liczby)",
+          "-lt": "mniejsze (liczby)",
+          "-le": "mniejsze lub równe (liczby)",
+          "-gt": "większe (liczby)",
+          "-ge": "większe lub równe (liczby)",
+          "=": "równe (stringi)",
+          "==": "równe (stringi, alternatywna składnia)",
+          "!=": "różne (stringi)",
+          "=~": "dopasowanie regex",
+          "-z": "string pusty",
+          "-n": "string niepusty"
+        }
+      },
+      "testy_plikow": {
+        "description": "Testy plików",
+        "symbols": {
+          "-f": "plik regularny",
+          "-d": "katalog",
+          "-e": "istnieje",
+          "-r": "można czytać",
+          "-w": "można pisać",
+          "-x": "można wykonać",
+          "-s": "niepusty",
+          "-L": "link symboliczny"
+        }
+      },
+      "regex_znaki": {
+        "description": "Specjalne znaki w regex",
+        "symbols": {
+          ".": "dowolny znak",
+          "^": "początek linii",
+          "$": "koniec linii",
+          "+": "jeden lub więcej",
+          "*": "zero lub więcej",
+          "?": "zero lub jeden",
+          "\\": "escape"
+        }
+      }
+    },
+    "examples": {
+      "zmienne": [
+        "echo ${HOME:-/tmp}        # użyj HOME lub /tmp",
+        "file=${1:-default.txt}    # pierwszy argument lub default",
+        "echo ${#PATH}             # długość zmiennej PATH",
+        "filename=\"script.sh.backup\"",
+        "echo ${filename%.*}       # script.sh (usuń .backup)",
+        "echo ${filename%%.*}      # script (usuń .sh.backup)"
+      ],
+      "historia": [
+        "sudo !!                   # powtórz ostatnią komendę z sudo",
+        "echo !$                   # ostatni argument ostatniej komendy",
+        "!grep                     # ostatnia komenda zaczynająca się od grep",
+        "^old^new                  # zamień old na new w ostatniej komendzie"
+      ],
+      "globbing": [
+        "rm *.{jpg,png}            # usuń pliki .jpg i .png",
+        "cp file{,.bak}            # skopiuj file do file.bak",
+        "echo {1..5}               # wypisze: 1 2 3 4 5",
+        "ls [A-Z]*                 # pliki zaczynające się wielką literą"
+      ],
+      "przekierowania": [
+        "command 2>/dev/null       # przekieruj błędy do /dev/null",
+        "command &>/dev/null       # przekieruj wszystko do /dev/null",
+        "command > output.txt 2>&1 # stdout i stderr do pliku",
+        "cat << EOF > file.txt     # here document"
+      ],
+      "operatory": [
+        "make && make install      # install tylko jeśli make się powiedzie",
+        "cd /tmp || exit 1         # wyjdź jeśli cd się nie powiedzie",
+        "(cd /tmp; ls)             # wykonaj w subshell",
+        "{ cd /tmp; ls; }          # wykonaj w bieżącym shell"
+      ],
+      "podstawienia": [
+        "files=$(ls *.txt)         # przypisz listę do zmiennej",
+        "echo \"Dzisiaj: $(date)\"   # wstaw wynik komendy",
+        "result=$((5 + 3))         # arytmetyka",
+        "echo `date`               # podstawienie (starsze)"
+      ]
+    },
+    "mnemonics": {
+      "usuwanie_wzorcow": "# jest przed $ na klawiaturze → usuwa z początku; % jest po $ na klawiaturze → usuwa z końca; Podwójny znak (##, %%) = najdłuższe dopasowanie; Pojedynczy znak (#, %) = najkrótsze dopasowanie"
+    }
+  }
+}

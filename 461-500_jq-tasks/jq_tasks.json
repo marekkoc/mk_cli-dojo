@@ -1,4 +1,4 @@
-[
+{ "tasks":[
   {
     "id": 461,
     "command": ["jq"],
@@ -599,4 +599,5 @@
     "warnings": null,
     "use_case": "Minimalizacja rozmiaru JSON do przesyłania przez sieć"
   }
-]
+ ]
+}

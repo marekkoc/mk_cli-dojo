@@ -1,0 +1,144 @@
+{
+  "company_info": {
+    "name": "TechSolutions Ltd.",
+    "founded": 2015,
+    "headquarters": "Warsaw",
+    "employees_count": 247,
+    "revenue": 15000000,
+    "website": "www.techsolutions.com",
+    "ceo": "Robert Kowalczyk"
+  },
+  "departments": {
+    "IT": {
+      "budget": 2500000,
+      "employees": 95,
+      "manager": "Peter Nowak",
+      "projects_count": 12,
+      "avg_salary": 11200
+    },
+    "Marketing": {
+      "budget": 800000,
+      "employees": 35,
+      "manager": "Anna Kowalska",
+      "projects_count": 8,
+      "avg_salary": 7500
+    },
+    "Sales": {
+      "budget": 1200000,
+      "employees": 42,
+      "manager": "John Wisniewski",
+      "projects_count": 6,
+      "avg_salary": 8200
+    },
+    "HR": {
+      "budget": 600000,
+      "employees": 15,
+      "manager": "Maria Lewandowska",
+      "projects_count": 4,
+      "avg_salary": 9800
+    },
+    "Finance": {
+      "budget": 450000,
+      "employees": 28,
+      "manager": "Thomas Zielinski",
+      "projects_count": 3,
+      "avg_salary": 10500
+    },
+    "Operations": {
+      "budget": 750000,
+      "employees": 32,
+      "manager": "Catherine Dabrowska",
+      "projects_count": 5,
+      "avg_salary": 8900
+    }
+  },
+  "quarterly_results": [
+    {
+      "quarter": "Q1 2024",
+      "revenue": 3200000,
+      "expenses": 2800000,
+      "profit": 400000,
+      "new_employees": 8,
+      "projects_completed": 15
+    },
+    {
+      "quarter": "Q2 2024",
+      "revenue": 3800000,
+      "expenses": 3100000,
+      "profit": 700000,
+      "new_employees": 12,
+      "projects_completed": 18
+    },
+    {
+      "quarter": "Q3 2024",
+      "revenue": 4100000,
+      "expenses": 3400000,
+      "profit": 700000,
+      "new_employees": 6,
+      "projects_completed": 22
+    },
+    {
+      "quarter": "Q4 2024",
+      "revenue": 4500000,
+      "expenses": 3600000,
+      "profit": 900000,
+      "new_employees": 10,
+      "projects_completed": 20
+    }
+  ],
+  "technologies": {
+    "programming_languages": [
+      {"name": "Python", "popularity": 85, "projects": 45},
+      {"name": "JavaScript", "popularity": 92, "projects": 52},
+      {"name": "Java", "popularity": 67, "projects": 28},
+      {"name": "C#", "popularity": 54, "projects": 22},
+      {"name": "PHP", "popularity": 43, "projects": 18},
+      {"name": "Go", "popularity": 38, "projects": 12}
+    ],
+    "frameworks": [
+      {"name": "React", "adoption": 78, "satisfaction": 4.5},
+      {"name": "Vue.js", "adoption": 45, "satisfaction": 4.2},
+      {"name": "Angular", "adoption": 35, "satisfaction": 3.8},
+      {"name": "Django", "adoption": 52, "satisfaction": 4.3},
+      {"name": "Spring", "adoption": 41, "satisfaction": 4.0}
+    ],
+    "cloud_providers": {
+      "AWS": {"usage": 65, "monthly_cost": 45000},
+      "Azure": {"usage": 25, "monthly_cost": 18000},
+      "Google Cloud": {"usage": 10, "monthly_cost": 8000}
+    }
+  },
+  "office_locations": [
+    {
+      "city": "Warsaw",
+      "address": "Marszalkowska 142 St.",
+      "employees": 156,
+      "type": "headquarters",
+      "square_meters": 2400
+    },
+    {
+      "city": "Krakow",
+      "address": "Florianska 55 St.",
+      "employees": 67,
+      "type": "branch",
+      "square_meters": 1200
+    },
+    {
+      "city": "Gdansk",
+      "address": "Dlugi Targ 28 St.",
+      "employees": 24,
+      "type": "branch",
+      "square_meters": 600
+    }
+  ],
+  "certifications": [
+    {"name": "ISO 9001", "valid_until": "2025-12-31", "scope": "Quality Management"},
+    {"name": "ISO 27001", "valid_until": "2024-08-15", "scope": "Information Security"},
+    {"name": "SOC 2", "valid_until": "2025-03-22", "scope": "Security Controls"}
+  ],
+  "partnerships": {
+    "technology_partners": ["Microsoft", "Amazon", "Google"],
+    "consulting_partners": ["Deloitte", "PwC"],
+    "integration_partners": ["Salesforce", "SAP", "Oracle"]
+  }
+}

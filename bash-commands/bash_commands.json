@@ -1,0 +1,477 @@
+{
+  "bash_linux_commands": {
+    "total_count": 155,
+    "categories": {
+      "podstawowe_operacje_na_plikach_i_katalogach": {
+        "count": 11,
+        "commands": [
+          "ls",
+          "cd",
+          "pwd",
+          "mkdir",
+          "rmdir",
+          "rm",
+          "cp",
+          "mv",
+          "find",
+          "locate",
+          "which"
+        ]
+      },
+      "przegladanie_i_edycja_plikow": {
+        "count": 11,
+        "commands": [
+          "cat",
+          "less",
+          "more",
+          "head",
+          "tail",
+          "grep",
+          "sed",
+          "awk",
+          "sort",
+          "uniq",
+          "wc"
+        ]
+      },
+      "uprawnienia_i_wlasciciele": {
+        "count": 4,
+        "commands": [
+          "chmod",
+          "chown",
+          "chgrp",
+          "umask"
+        ]
+      },
+      "procesy_i_system": {
+        "count": 9,
+        "commands": [
+          "ps",
+          "top",
+          "htop",
+          "kill",
+          "killall",
+          "jobs",
+          "bg",
+          "fg",
+          "nohup"
+        ]
+      },
+      "informacje_o_systemie": {
+        "count": 8,
+        "commands": [
+          "df",
+          "du",
+          "free",
+          "uname",
+          "whoami",
+          "id",
+          "uptime",
+          "date"
+        ]
+      },
+      "siec_podstawowe": {
+        "count": 5,
+        "commands": [
+          "wget",
+          "curl",
+          "ssh",
+          "scp",
+          "rsync"
+        ]
+      },
+      "archiwizacja_i_kompresja": {
+        "count": 5,
+        "commands": [
+          "tar",
+          "gzip",
+          "gunzip",
+          "zip",
+          "unzip"
+        ]
+      },
+      "zarzadzanie_historia_i_sesja": {
+        "count": 4,
+        "commands": [
+          "history",
+          "alias",
+          "export",
+          "source"
+        ]
+      },
+      "przekierowania_i_rurki": {
+        "count": 2,
+        "commands": [
+          "tee",
+          "pipe_operators"
+        ]
+      },
+      "kontrola_zadan": {
+        "count": 3,
+        "commands": [
+          "crontab",
+          "at",
+          "screen",
+          "tmux"
+        ]
+      },
+      "siec_zaawansowane": {
+        "count": 16,
+        "commands": [
+          "ping",
+          "netstat",
+          "ss",
+          "nmap",
+          "telnet",
+          "nc",
+          "lsof",
+          "iptables",
+          "route",
+          "ip",
+          "ifconfig",
+          "dig",
+          "nslookup",
+          "host",
+          "traceroute",
+          "mtr"
+        ]
+      },
+      "struktura_katalogow": {
+        "count": 1,
+        "commands": [
+          "tree"
+        ]
+      },
+      "zaawansowane_operacje_na_tekscie": {
+        "count": 6,
+        "commands": [
+          "cut",
+          "tr",
+          "paste",
+          "join",
+          "diff",
+          "patch"
+        ]
+      },
+      "monitorowanie_i_diagnostyka": {
+        "count": 9,
+        "commands": [
+          "iostat",
+          "vmstat",
+          "sar",
+          "strace",
+          "ltrace",
+          "dmesg",
+          "lscpu",
+          "lsblk",
+          "fdisk"
+        ]
+      },
+      "zarzadzanie_uzytkownikami": {
+        "count": 6,
+        "commands": [
+          "su",
+          "sudo",
+          "passwd",
+          "useradd",
+          "usermod",
+          "groups"
+        ]
+      },
+      "zaawansowane_narzedzia": {
+        "count": 5,
+        "commands": [
+          "xargs",
+          "parallel",
+          "watch",
+          "timeout",
+          "yes"
+        ]
+      },
+      "systemowe_i_diagnostyczne": {
+        "count": 13,
+        "commands": [
+          "systemctl",
+          "service",
+          "mount",
+          "umount",
+          "lsmod",
+          "modprobe",
+          "dstat",
+          "iotop",
+          "nethogs",
+          "lshw",
+          "hwinfo",
+          "sensors",
+          "parted"
+        ]
+      },
+      "edytory_tekstu": {
+        "count": 4,
+        "commands": [
+          "nano",
+          "vim",
+          "vi",
+          "emacs"
+        ]
+      },
+      "zaawansowane_narzedzia_tekstowe": {
+        "count": 8,
+        "commands": [
+          "column",
+          "fold",
+          "expand",
+          "unexpand",
+          "nl",
+          "pr",
+          "fmt",
+          "split"
+        ]
+      },
+      "pliki_binarne": {
+        "count": 7,
+        "commands": [
+          "hexdump",
+          "xxd",
+          "od",
+          "strings",
+          "file",
+          "stat",
+          "dcmdump"
+        ]
+      },
+      "bezpieczenstwo_i_szyfrowanie": {
+        "count": 5,
+        "commands": [
+          "gpg",
+          "openssl",
+          "sha256sum",
+          "md5sum",
+          "base64"
+        ]
+      },
+      "logi": {
+        "count": 4,
+        "commands": [
+          "journalctl",
+          "logger",
+          "logrotate",
+          "zcat"
+        ]
+      },
+      "srodowisko_i_zmienne": {
+        "count": 4,
+        "commands": [
+          "env",
+          "printenv",
+          "set",
+          "unset"
+        ]
+      },
+      "pliki_specjalne": {
+        "count": 4,
+        "commands": [
+          "mkfifo",
+          "ln",
+          "readlink",
+          "blkid"
+        ]
+      },
+      "komunikacja": {
+        "count": 3,
+        "commands": [
+          "write",
+          "wall",
+          "mesg"
+        ]
+      },
+      "procesy_i_sygnaly": {
+        "count": 4,
+        "commands": [
+          "pgrep",
+          "pkill",
+          "trap",
+          "exec"
+        ]
+      },
+      "zarzadzanie_zasilaniem": {
+        "count": 5,
+        "commands": [
+          "shutdown",
+          "reboot",
+          "halt",
+          "poweroff",
+          "init"
+        ]
+      }
+    },
+    "all_commands_alphabetical": [
+      "alias",
+      "at",
+      "awk",
+      "base64",
+      "bg",
+      "blkid",
+      "cat",
+      "cd",
+      "chmod",
+      "chgrp",
+      "chown",
+      "column",
+      "cp",
+      "crontab",
+      "curl",
+      "cut",
+      "date",
+      "dcmdump",
+      "df",
+      "diff",
+      "dig",
+      "dmesg",
+      "dstat",
+      "du",
+      "emacs",
+      "env",
+      "exec",
+      "expand",
+      "export",
+      "fdisk",
+      "fg",
+      "file",
+      "find",
+      "fmt",
+      "fold",
+      "free",
+      "gpg",
+      "grep",
+      "groups",
+      "gunzip",
+      "gzip",
+      "halt",
+      "head",
+      "hexdump",
+      "history",
+      "host",
+      "htop",
+      "hwinfo",
+      "id",
+      "ifconfig",
+      "init",
+      "iostat",
+      "iotop",
+      "ip",
+      "iptables",
+      "jobs",
+      "join",
+      "journalctl",
+      "kill",
+      "killall",
+      "less",
+      "ln",
+      "locate",
+      "logger",
+      "logrotate",
+      "ls",
+      "lsblk",
+      "lscpu",
+      "lshw",
+      "lsmod",
+      "lsof",
+      "ltrace",
+      "md5sum",
+      "mesg",
+      "mkdir",
+      "mkfifo",
+      "modprobe",
+      "more",
+      "mount",
+      "mtr",
+      "mv",
+      "nano",
+      "nc",
+      "nethogs",
+      "netstat",
+      "nl",
+      "nmap",
+      "nohup",
+      "nslookup",
+      "od",
+      "openssl",
+      "parallel",
+      "parted",
+      "passwd",
+      "paste",
+      "patch",
+      "pgrep",
+      "ping",
+      "pkill",
+      "poweroff",
+      "pr",
+      "printenv",
+      "ps",
+      "pwd",
+      "readlink",
+      "reboot",
+      "rm",
+      "rmdir",
+      "route",
+      "rsync",
+      "sar",
+      "scp",
+      "screen",
+      "sed",
+      "sensors",
+      "service",
+      "set",
+      "sha256sum",
+      "shutdown",
+      "sort",
+      "source",
+      "split",
+      "ss",
+      "ssh",
+      "stat",
+      "strace",
+      "strings",
+      "su",
+      "sudo",
+      "systemctl",
+      "tail",
+      "tar",
+      "tee",
+      "telnet",
+      "timeout",
+      "tmux",
+      "top",
+      "tr",
+      "traceroute",
+      "trap",
+      "tree",
+      "umask",
+      "umount",
+      "uname",
+      "unexpand",
+      "uniq",
+      "unset",
+      "unzip",
+      "uptime",
+      "useradd",
+      "usermod",
+      "vi",
+      "vim",
+      "vmstat",
+      "wall",
+      "watch",
+      "wc",
+      "wget",
+      "which",
+      "whoami",
+      "write",
+      "xargs",
+      "xxd",
+      "yes",
+      "zcat",
+      "zip"
+    ]
+  }
+}

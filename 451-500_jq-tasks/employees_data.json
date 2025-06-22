@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "name": "Jan Kowalski",
+    "email": "jan.kowalski@firma.pl",
+    "age": 32,
+    "department": "IT",
+    "position": "Senior Developer",
+    "salary": 12000,
+    "active": true,
+    "skills": ["Python", "JavaScript", "Docker"],
+    "projects": [
+      {"name": "WebApp", "status": "completed", "budget": 50000},
+      {"name": "API Gateway", "status": "in_progress", "budget": 75000}
+    ],
+    "address": {
+      "city": "Warszawa",
+      "street": "Marszałkowska 1",
+      "postal_code": "00-001"
+    },
+    "hire_date": "2020-03-15",
+    "performance_score": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Anna Nowak",
+    "email": "anna.nowak@firma.pl",
+    "age": 28,
+    "department": "Marketing",
+    "position": "Marketing Manager",
+    "salary": 8500,
+    "active": true,
+    "skills": ["SEO", "Google Ads", "Analytics"],
+    "projects": [
+      {"name": "Campaign 2024", "status": "completed", "budget": 25000},
+      {"name": "Brand Refresh", "status": "planning", "budget": 40000}
+    ],
+    "address": {
+      "city": "Kraków",
+      "street": "Floriańska 12",
+      "postal_code": "31-021"
+    },
+    "hire_date": "2021-07-22",
+    "performance_score": 4.5
+  },
+  {
+    "id": 3,
+    "name": "Piotr Wiśniewski",
+    "email": "piotr.wisniewski@firma.pl",
+    "age": 45,
+    "department": "IT",
+    "position": "DevOps Engineer",
+    "salary": 14000,
+    "active": false,
+    "skills": ["Kubernetes", "AWS", "Terraform"],
+    "projects": [
+      {"name": "Infrastructure", "status": "on_hold", "budget": 100000}
+    ],
+    "address": {
+      "city": "Gdańsk",
+      "street": "Długa 15",
+      "postal_code": "80-827"
+    },
+    "hire_date": "2018-11-08",
+    "performance_score": 4.2
+  },
+  {
+    "id": 4,
+    "name": "Maria Kamińska",
+    "email": "maria.kaminska@firma.pl",
+    "age": 35,
+    "department": "HR",
+    "position": "HR Director",
+    "salary": 11000,
+    "active": true,
+    "skills": ["Recruitment", "Training", "Leadership"],
+    "projects": [
+      {"name": "Onboarding System", "status": "completed", "budget": 15000},
+      {"name": "Performance Review", "status": "in_progress", "budget": 20000}
+    ],
+    "address": {
+      "city": "Wrocław",
+      "street": "Rynek 7",
+      "postal_code": "50-101"
+    },
+    "hire_date": "2019-05-12",
+    "performance_score": 4.7
+  },
+  {
+    "id": 5,
+    "name": "Tomasz Zieliński",
+    "email": "tomasz.zielinski@firma.pl",
+    "age": 29,
+    "department": "Sales",
+    "position": "Sales Representative",
+    "salary": 7000,
+    "active": true,
+    "skills": ["CRM", "Negotiations", "B2B"],
+    "projects": [
+      {"name": "Client Acquisition", "status": "in_progress", "budget": 30000}
+    ],
+    "address": {
+      "city": "Poznań",
+      "street": "Święty Marcin 20",
+      "postal_code": "61-806"
+    },
+    "hire_date": "2022-01-10",
+    "performance_score": 3.9
+  },
+  {
+    "id": 6,
+    "name": "Katarzyna Lewandowska",
+    "email": "katarzyna.lewandowska@firma.pl",
+    "age": 31,
+    "department": "IT",
+    "position": "Frontend Developer",
+    "salary": 9500,
+    "active": true,
+    "skills": ["React", "Vue.js", "CSS"],
+    "projects": [
+      {"name": "UI Redesign", "status": "completed", "budget": 35000},
+      {"name": "Mobile App", "status": "planning", "budget": 60000}
+    ],
+    "address": {
+      "city": "Łódź",
+      "street": "Piotrkowska 100",
+      "postal_code": "90-001"
+    },
+    "hire_date": "2021-09-01",
+    "performance_score": 4.6
+  },
+  {
+    "id": 7,
+    "name": "Michał Dąbrowski",
+    "email": "michal.dabrowski@firma.pl",
+    "age": 38,
+    "department": "Finance",
+    "position": "Financial Analyst",
+    "salary": 10500,
+    "active": true,
+    "skills": ["Excel", "SQL", "Power BI"],
+    "projects": [
+      {"name": "Budget Analysis", "status": "in_progress", "budget": 12000}
+    ],
+    "address": {
+      "city": "Katowice",
+      "street": "3 Maja 45",
+      "postal_code": "40-096"
+    },
+    "hire_date": "2020-06-18",
+    "performance_score": 4.3
+  },
+  {
+    "id": 8,
+    "name": "Agnieszka Woźniak",
+    "email": "agnieszka.wozniak@firma.pl",
+    "age": 26,
+    "department": "Marketing",
+    "position": "Content Creator",
+    "salary": 6500,
+    "active": true,
+    "skills": ["Copywriting", "Social Media", "Photoshop"],
+    "projects": [
+      {"name": "Content Strategy", "status": "completed", "budget": 18000},
+      {"name": "Video Campaign", "status": "in_progress", "budget": 28000}
+    ],
+    "address": {
+      "city": "Szczecin",
+      "street": "Bolesława Krzywoustego 8",
+      "postal_code": "70-240"
+    },
+    "hire_date": "2023-02-14",
+    "performance_score": 4.1
+  }
+]

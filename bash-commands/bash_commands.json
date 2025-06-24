@@ -1,6 +1,6 @@
 {
   "bash_linux_commands": {
-    "total_count": 155,
+    "total_count": 191,
     "categories": {
       "podstawowe_operacje_na_plikach_i_katalogach": {
         "count": 11,
@@ -107,7 +107,7 @@
         ]
       },
       "kontrola_zadan": {
-        "count": 3,
+        "count": 4,
         "commands": [
           "crontab",
           "at",
@@ -303,22 +303,86 @@
           "poweroff",
           "init"
         ]
+      },
+      "zarzadzanie_pakietami": {
+        "count": 10,
+        "commands": [
+          "apt",
+          "apt-get",
+          "apt-cache",
+          "dpkg",
+          "dpkg-query",
+          "yum",
+          "dnf",
+          "rpm",
+          "snap",
+          "flatpak"
+        ]
+      },
+      "czas_i_kalendarz": {
+        "count": 8,
+        "commands": [
+          "cal",
+          "calendar",
+          "time",
+          "timedatectl",
+          "hwclock",
+          "ntpdate",
+          "chrony",
+          "zdump"
+        ]
+      },
+      "konteneryzacja": {
+        "count": 8,
+        "commands": [
+          "docker",
+          "docker-compose",
+          "podman",
+          "buildah",
+          "skopeo",
+          "kubectl",
+          "helm",
+          "crictl"
+        ]
+      },
+      "git_i_kontrola_wersji": {
+        "count": 10,
+        "commands": [
+          "git",
+          "git-log",
+          "git-diff",
+          "git-status",
+          "git-commit",
+          "git-push",
+          "git-pull",
+          "git-clone",
+          "git-branch",
+          "git-merge"
+        ]
       }
     },
     "all_commands_alphabetical": [
       "alias",
+      "apt",
+      "apt-cache",
+      "apt-get",
       "at",
       "awk",
       "base64",
       "bg",
       "blkid",
+      "buildah",
+      "cal",
+      "calendar",
       "cat",
       "cd",
       "chmod",
       "chgrp",
       "chown",
+      "chrony",
       "column",
       "cp",
+      "crictl",
       "crontab",
       "curl",
       "cut",
@@ -328,6 +392,11 @@
       "diff",
       "dig",
       "dmesg",
+      "dnf",
+      "docker",
+      "docker-compose",
+      "dpkg",
+      "dpkg-query",
       "dstat",
       "du",
       "emacs",
@@ -339,9 +408,20 @@
       "fg",
       "file",
       "find",
+      "flatpak",
       "fmt",
       "fold",
       "free",
+      "git",
+      "git-branch",
+      "git-clone",
+      "git-commit",
+      "git-diff",
+      "git-log",
+      "git-merge",
+      "git-pull",
+      "git-push",
+      "git-status",
       "gpg",
       "grep",
       "groups",
@@ -349,10 +429,12 @@
       "gzip",
       "halt",
       "head",
+      "helm",
       "hexdump",
       "history",
       "host",
       "htop",
+      "hwclock",
       "hwinfo",
       "id",
       "ifconfig",
@@ -366,6 +448,7 @@
       "journalctl",
       "kill",
       "killall",
+      "kubectl",
       "less",
       "ln",
       "locate",
@@ -395,6 +478,7 @@
       "nmap",
       "nohup",
       "nslookup",
+      "ntpdate",
       "od",
       "openssl",
       "parallel",
@@ -404,7 +488,9 @@
       "patch",
       "pgrep",
       "ping",
+      "pipe_operators",
       "pkill",
+      "podman",
       "poweroff",
       "pr",
       "printenv",
@@ -415,6 +501,7 @@
       "rm",
       "rmdir",
       "route",
+      "rpm",
       "rsync",
       "sar",
       "scp",
@@ -425,6 +512,8 @@
       "set",
       "sha256sum",
       "shutdown",
+      "skopeo",
+      "snap",
       "sort",
       "source",
       "split",
@@ -440,6 +529,8 @@
       "tar",
       "tee",
       "telnet",
+      "time",
+      "timedatectl",
       "timeout",
       "tmux",
       "top",
@@ -470,7 +561,9 @@
       "xargs",
       "xxd",
       "yes",
+      "yum",
       "zcat",
+      "zdump",
       "zip"
     ]
   }

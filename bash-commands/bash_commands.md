@@ -1,7 +1,7 @@
-# Lista 155 najważniejszych komend bash/Linux
+# Lista 191 najważniejszych komend bash/Linux
 
 ## Podsumowanie
-**Łączna liczba komend: 155**
+**Łączna liczba komend: 191**
 
 ---
 
@@ -226,142 +226,299 @@
 - `poweroff` - wyłączenie zasilania
 - `init` - zmiana poziomu uruchomienia systemu
 
+## 28. Zarządzanie pakietami (10 komend)
+- `apt` - nowoczesny interfejs zarządzania pakietami (Debian/Ubuntu)
+- `apt-get` - tradycyjny interfejs APT (Debian/Ubuntu)
+- `apt-cache` - wyszukiwanie i informacje o pakietach APT
+- `dpkg` - niskopoziomowe zarządzanie pakietami .deb
+- `dpkg-query` - zapytania o zainstalowane pakiety .deb
+- `yum` - zarządzanie pakietami (RHEL/CentOS)
+- `dnf` - zarządzanie pakietami (Fedora)
+- `rpm` - niskopoziomowe zarządzanie pakietami .rpm
+- `snap` - zarządzanie pakietami snap
+- `flatpak` - zarządzanie pakietami flatpak
+
+## 29. Czas i kalendarz (8 komend)
+- `cal` - wyświetlanie kalendarza
+- `calendar` - przypomnienia kalendarzowe
+- `time` - pomiar czasu wykonania komendy
+- `timedatectl` - zarządzanie czasem systemowym (systemd)
+- `hwclock` - zarządzanie zegarem sprzętowym
+- `ntpdate` - synchronizacja czasu przez NTP
+- `chrony` - demon synchronizacji czasu (nowoczesny)
+- `zdump` - informacje o strefach czasowych
+
+## 30. Konteneryzacja (8 komend)
+- `docker` - zarządzanie kontenerami Docker
+- `docker-compose` - orkiestracja kontenerów Docker
+- `podman` - alternatywa dla Docker (bez demona)
+- `buildah` - budowanie obrazów kontenerów
+- `skopeo` - operacje na obrazach kontenerów
+- `kubectl` - zarządzanie klastrami Kubernetes
+- `helm` - menedżer pakietów Kubernetes
+- `crictl` - CLI dla Container Runtime Interface
+
+## 31. Git i kontrola wersji (10 komend)
+- `git` - system kontroli wersji
+- `git-log` - historia commitów
+- `git-diff` - porównywanie zmian w plikach
+- `git-status` - status repozytorium
+- `git-commit` - zatwierdzanie zmian
+- `git-push` - wysyłanie zmian do zdalnego repozytorium
+- `git-pull` - pobieranie zmian ze zdalnego repozytorium
+- `git-clone` - klonowanie repozytorium
+- `git-branch` - zarządzanie gałęziami
+- `git-merge` - scalanie gałęzi
+
 ---
 
 ## Wszystkie komendy w porządku alfabetycznym
 
-`alias`, `at`, `awk`, `base64`, `bg`, `blkid`, `cat`, `cd`, `chmod`, `chgrp`, `chown`, `column`, `cp`, `crontab`, `curl`, `cut`, `date`, `dcmdump`, `df`, `diff`, `dig`, `dmesg`, `dstat`, `du`, `emacs`, `env`, `exec`, `expand`, `export`, `fdisk`, `fg`, `file`, `find`, `fmt`, `fold`, `free`, `gpg`, `grep`, `groups`, `gunzip`, `gzip`, `halt`, `head`, `hexdump`, `history`, `host`, `htop`, `hwinfo`, `id`, `ifconfig`, `init`, `iostat`, `iotop`, `ip`, `iptables`, `jobs`, `join`, `journalctl`, `kill`, `killall`, `less`, `ln`, `locate`, `logger`, `logrotate`, `ls`, `lsblk`, `lscpu`, `lshw`, `lsmod`, `lsof`, `ltrace`, `md5sum`, `mesg`, `mkdir`, `mkfifo`, `modprobe`, `more`, `mount`, `mtr`, `mv`, `nano`, `nc`, `nethogs`, `netstat`, `nl`, `nmap`, `nohup`, `nslookup`, `od`, `openssl`, `parallel`, `parted`, `passwd`, `paste`, `patch`, `pgrep`, `ping`, `pkill`, `poweroff`, `pr`, `printenv`, `ps`, `pwd`, `readlink`, `reboot`, `rm`, `rmdir`, `route`, `rsync`, `sar`, `scp`, `screen`, `sed`, `sensors`, `service`, `set`, `sha256sum`, `shutdown`, `sort`, `source`, `split`, `ss`, `ssh`, `stat`, `strace`, `strings`, `su`, `sudo`, `systemctl`, `tail`, `tar`, `tee`, `telnet`, `timeout`, `tmux`, `top`, `tr`, `traceroute`, `trap`, `tree`, `umask`, `umount`, `uname`, `unexpand`, `uniq`, `unset`, `unzip`, `uptime`, `useradd`, `usermod`, `vi`, `vim`, `vmstat`, `wall`, `watch`, `wc`, `wget`, `which`, `whoami`, `write`, `xargs`, `xxd`, `yes`, `zcat`, `zip`
+`alias`, `apt`, `apt-cache`, `apt-get`, `at`, `awk`, `base64`, `bg`, `blkid`, `buildah`, `cal`, `calendar`, `cat`, `cd`, `chmod`, `chgrp`, `chown`, `chrony`, `column`, `cp`, `crictl`, `crontab`, `curl`, `cut`, `date`, `dcmdump`, `df`, `diff`, `dig`, `dmesg`, `dnf`, `docker`, `docker-compose`, `dpkg`, `dpkg-query`, `dstat`, `du`, `emacs`, `env`, `exec`, `expand`, `export`, `fdisk`, `fg`, `file`, `find`, `flatpak`, `fmt`, `fold`, `free`, `git`, `git-branch`, `git-clone`, `git-commit`, `git-diff`, `git-log`, `git-merge`, `git-pull`, `git-push`, `git-status`, `gpg`, `grep`, `groups`, `gunzip`, `gzip`, `halt`, `head`, `helm`, `hexdump`, `history`, `host`, `htop`, `hwclock`, `hwinfo`, `id`, `ifconfig`, `init`, `iostat`, `iotop`, `ip`, `iptables`, `jobs`, `join`, `journalctl`, `kill`, `killall`, `kubectl`, `less`, `ln`, `locate`, `logger`, `logrotate`, `ls`, `lsblk`, `lscpu`, `lshw`, `lsmod`, `lsof`, `ltrace`, `md5sum`, `mesg`, `mkdir`, `mkfifo`, `modprobe`, `more`, `mount`, `mtr`, `mv`, `nano`, `nc`, `nethogs`, `netstat`, `nl`, `nmap`, `nohup`, `nslookup`, `ntpdate`, `od`, `openssl`, `parallel`, `parted`, `passwd`, `paste`, `patch`, `pgrep`, `ping`, `pkill`, `podman`, `poweroff`, `pr`, `printenv`, `ps`, `pwd`, `readlink`, `reboot`, `rm`, `rmdir`, `route`, `rpm`, `rsync`, `sar`, `scp`, `screen`, `sed`, `sensors`, `service`, `set`, `sha256sum`, `shutdown`, `skopeo`, `snap`, `sort`, `source`, `split`, `ss`, `ssh`, `stat`, `strace`, `strings`, `su`, `sudo`, `systemctl`, `tail`, `tar`, `tee`, `telnet`, `time`, `timedatectl`, `timeout`, `tmux`, `top`, `tr`, `traceroute`, `trap`, `tree`, `umask`, `umount`, `uname`, `unexpand`, `uniq`, `unset`, `unzip`, `uptime`, `useradd`, `usermod`, `vi`, `vim`, `vmstat`, `wall`, `watch`, `wc`, `wget`, `which`, `whoami`, `write`, `xargs`, `xxd`, `yes`, `yum`, `zcat`, `zdump`, `zip`
 
 ---
 
 ## Przydatne przykłady użycia
 
-### Sprawdzanie portów
+### Zarządzanie pakietami - Debian/Ubuntu
 ```bash
-# Lokalnie
-netstat -tulpn              # wszystkie porty
-ss -tulpn                   # alternatywa dla netstat
-lsof -i :80                 # kto używa portu 80
+# Aktualizacja systemu
+apt update && apt upgrade -y
 
-# Zdalnie
-nmap -p 80,443 example.com  # skanowanie konkretnych portów
-nc -zv example.com 80       # test połączenia z portem
-telnet example.com 80       # interaktywne połączenie
+# Wyszukiwanie pakietów
+apt search python3
+apt-cache search "web server"
+
+# Instalacja/usuwanie pakietów
+apt install nginx python3-pip
+apt remove --purge apache2
+
+# Informacje o pakietach
+apt show nginx
+dpkg -l | grep python
+dpkg-query -W -f='${Installed-Size;10}\t${Package}\n' | sort -k1,1n
+
+# Lista plików z pakietu
+dpkg -L nginx
 ```
 
-### Zaawansowane przetwarzanie tekstu
+### Zarządzanie pakietami - Red Hat/Fedora
 ```bash
-# cut - wycinanie kolumn
-ps aux | cut -d' ' -f1,11
+# Aktualizacja systemu
+dnf update                    # Fedora
+yum update                    # RHEL/CentOS
 
-# xargs - przetwarzanie listy
-find . -name "*.txt" | xargs grep "pattern"
+# Wyszukiwanie i instalacja
+dnf search nginx
+dnf install nginx python3-pip
 
-# watch - monitorowanie w czasie rzeczywistym
-watch -n 2 'ps aux | grep python'
+# Informacje o pakietach
+rpm -qa | grep python
+rpm -qi nginx
+rpm -ql nginx                 # lista plików z pakietu
 ```
 
-### Tree - struktura katalogów
+### Zarządzanie czasem i kalendarzem
 ```bash
-tree                    # struktura bieżącego katalogu
-tree -a                # z ukrytymi plikami
-tree -L 2              # maksymalnie 2 poziomy
-tree -d                # tylko katalogi
+# Kalendarz
+cal                          # bieżący miesiąc
+cal 2025                     # cały rok
+cal -3                       # 3 miesiące (poprzedni, bieżący, następny)
+cal -j                       # z numerami dni w roku
+
+# Pomiar czasu wykonania
+time ls -la /usr/bin         # pomiar czasu komendy
+time python script.py       # pomiar czasu skryptu
+
+# Zarządzanie czasem systemowym
+timedatectl                  # status czasu systemowego
+timedatectl set-timezone Europe/Warsaw
+timedatectl set-ntp true     # włącz synchronizację NTP
+timedatectl set-time "2025-06-24 15:30:00"
+
+# Zegar sprzętowy
+hwclock --show               # pokaż czas sprzętowy
+hwclock --systohc            # synchronizuj system -> hardware
+hwclock --hctosys            # synchronizuj hardware -> system
+
+# Synchronizacja NTP
+ntpdate -s time.nist.gov     # jednorazowa synchronizacja
+chrony sources               # źródła czasu chronyd
 ```
 
-### Zarządzanie systemem
+### Konteneryzacja - Docker
 ```bash
-# systemctl - zarządzanie usługami
-systemctl status nginx
-systemctl start/stop/restart nginx
-systemctl enable/disable nginx
+# Podstawowe operacje Docker
+docker ps                    # uruchomione kontenery
+docker ps -a                 # wszystkie kontenery
+docker images                # lokalne obrazy
 
-# mount - montowanie systemów plików
-mount /dev/sdb1 /mnt/usb
-umount /mnt/usb
+# Uruchamianie kontenerów
+docker run -d -p 80:80 nginx
+docker run -it ubuntu:22.04 bash
 
-# dstat - monitorowanie systemu
-dstat -cdngy 1         # cpu, disk, network, paging, system co sekundę
+# Zarządzanie obrazami
+docker build -t myapp:1.0 .
+docker push myapp:1.0
+docker pull redis:alpine
+
+# Docker Compose
+docker-compose up -d         # uruchom w tle
+docker-compose logs -f app   # logi serwisu
+docker-compose down          # zatrzymaj i usuń
+
+# Podman (alternatywa dla Docker)
+podman run -d -p 8080:80 nginx
+podman pod create --name mypod
 ```
 
-### Narzędzia diagnostyczne
+### Konteneryzacja - Kubernetes
 ```bash
-# iotop - monitorowanie I/O
-iotop -o               # tylko procesy wykonujące I/O
+# Zarządzanie klastrami
+kubectl get nodes            # węzły klastra
+kubectl get pods --all-namespaces
+kubectl get services
 
-# nethogs - monitorowanie sieci
-nethogs eth0           # użycie sieci przez procesy
+# Deployments
+kubectl create deployment nginx --image=nginx:1.21
+kubectl scale deployment nginx --replicas=3
+kubectl rollout status deployment/nginx
 
-# sensors - temperatura sprzętu
-sensors                # temperatury CPU, GPU itp.
+# Helm - menedżer pakietów K8s
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm install my-nginx bitnami/nginx
+helm list
+helm upgrade my-nginx bitnami/nginx
 ```
 
-### Bezpieczeństwo i sumy kontrolne
+### Git i kontrola wersji
 ```bash
-# Obliczanie sum kontrolnych
-sha256sum file.txt
-md5sum file.txt
+# Podstawowe operacje
+git status                   # status repozytorium
+git add .                    # dodaj wszystkie zmiany
+git commit -m "Update files"
+git push origin main
 
-# Szyfrowanie GPG
-gpg --encrypt --recipient user@example.com file.txt
-gpg --decrypt file.txt.gpg
+# Praca z gałęziami
+git branch                   # lista gałęzi
+git branch feature-login     # nowa gałąź
+git checkout feature-login   # przełącz na gałąź
+git merge feature-login      # scal gałąź
 
-# Base64 kodowanie
-echo "tekst" | base64
-echo "dGVrc3QK" | base64 -d
+# Historia i różnice
+git log --oneline           # kompaktowa historia
+git log --graph --all       # graficzny log
+git diff HEAD~1             # różnice z poprzednim commitem
+git diff main..feature      # różnice między gałęziami
+
+# Zdalne repozytoria
+git remote -v               # lista remote'ów
+git pull origin main        # pobierz zmiany
+git clone https://github.com/user/repo.git
 ```
 
-### Analiza plików binarnych
+### Zaawansowane przykłady Data Science
 ```bash
-# file - typ pliku
-file unknown_file
+# Monitoring procesów ML
+watch -n 10 'ps aux | grep python | grep -E "(train|pytorch|tensorflow)" | 
+             awk "{print \$2, \$3, \$4, \$11}" | column -t'
 
-# strings - tekst z plików binarnych
-strings binary_file | grep "password"
+# Automatyzacja backup'ów eksperymentów
+find /experiments -name "*.pkl" -newer /tmp/last_backup -print0 | \
+xargs -0 tar -czf /backups/models_$(date +%Y%m%d).tar.gz
 
-# hexdump - zawartość hex
-hexdump -C file.bin | head
-
-# dcmdump - pliki DICOM (medyczne)
-dcmdump medical_image.dcm
+# Analiza logów treningu w czasie rzeczywistym
+tail -f /var/log/training.log | grep -E "(loss|accuracy)" | \
+awk '{print strftime("%H:%M:%S"), $0}' | tee training_metrics.log
 ```
 
-### Procesy i sygnały
+### Zaawansowane przykłady DevOps
 ```bash
-# pgrep/pkill - zarządzanie procesami po nazwie
-pgrep firefox          # znajdź PID procesów firefox
-pkill firefox          # zakończ wszystkie procesy firefox
+# Health check serwisów z alertami
+monitor_services() {
+    services=(nginx mysql redis)
+    for service in "${services[@]}"; do
+        if ! systemctl is-active --quiet $service; then
+            echo "ALERT: $service is down" | logger -t monitoring
+            systemctl restart $service
+        fi
+    done
+}
 
-# trap - obsługa sygnałów w skryptach
-trap 'echo "Przerwano!"' INT
+# Deployment z rollback
+deploy_with_rollback() {
+    local app=$1
+    local version=$2
+    
+    # Backup aktualnej wersji
+    docker tag $app:latest $app:rollback
+    
+    # Deploy nowej wersji
+    docker pull $app:$version
+    docker tag $app:$version $app:latest
+    docker-compose up -d $app
+    
+    # Health check
+    sleep 10
+    if ! curl -f http://localhost/health; then
+        echo "Deploy failed, rolling back..."
+        docker tag $app:rollback $app:latest
+        docker-compose up -d $app
+    fi
+}
+
+# Automatyzacja certyfikatów Let's Encrypt
+certbot_auto_renew() {
+    certbot renew --quiet
+    if [ $? -eq 0 ]; then
+        systemctl reload nginx
+        logger -t certbot "Certificates renewed successfully"
+    fi
+}
+
+# Dodaj do crontab
+# 0 3 * * * /usr/local/bin/certbot_auto_renew
 ```
 
-### Zarządzanie zasilaniem
+### Snapy i Flatpak
 ```bash
-# shutdown - różne opcje
-shutdown -h now        # wyłącz teraz
-shutdown -h +10        # wyłącz za 10 minut
-shutdown -r now        # restart teraz
-shutdown -r +5 "Restart za 5 minut"  # z komunikatem
+# Snap packages
+snap list                    # zainstalowane snapy
+snap find firefox            # wyszukaj snap
+snap install code --classic # instaluj z uprawnieniami
+snap refresh                 # aktualizuj wszystkie
+snap remove firefox          # usuń snap
 
-# reboot - restart
-reboot                 # natychmiastowy restart
-reboot -f              # wymuszony restart
+# Flatpak packages
+flatpak list                 # zainstalowane flatpaki
+flatpak search gimp          # wyszukaj aplikację
+flatpak install flathub org.gimp.GIMP
+flatpak run org.gimp.GIMP    # uruchom aplikację
+flatpak update               # aktualizuj wszystkie
+```
 
-# halt - zatrzymanie
-halt                   # zatrzymaj system
-halt -p                # zatrzymaj i wyłącz zasilanie
+### Kombinacje przydatne w codziennej pracy
+```bash
+# Znajdź największe pliki w systemie
+find / -type f -size +100M 2>/dev/null | xargs ls -lh | sort -k5 -hr | head -10
 
-# poweroff - wyłączenie zasilania
-poweroff               # wyłącz zasilanie
+# Monitoring użycia dysku w czasie rzeczywistym
+watch -n 5 'df -h | grep -E "(Filesystem|/dev/)" | column -t'
 
-# init - poziomy uruchomienia
-init 0                 # wyłączenie
-init 6                 # restart
-init 3                 # tryb tekstowy (bez GUI)
-init 5                 # tryb graficzny
+# Synchronizacja z backupem i logowaniem
+rsync -avz --progress /home/user/ /backup/user/ | tee backup_$(date +%Y%m%d).log
+
+# Automatyczne czyszczenie logów starszych niż 30 dni
+find /var/log -name "*.log" -mtime +30 -exec rm {} \; 2>/dev/null
+
+# Git status wszystkich repozytoriów w katalogu
+find ~/projects -name ".git" -type d | while read repo; do
+    echo "Repository: $(dirname $repo)"
+    cd $(dirname $repo) && git status --porcelain
+    echo "---"
+done
 ```
 
 ---
 
-*Lista zawiera 155 najważniejszych komend bash/Linux pogrupowanych tematycznie dla łatwiejszego uczenia się i zapamiętywania.*
+*Lista zawiera 191 najważniejszych komend bash/Linux pogrupowanych tematycznie dla łatwiejszego uczenia się i zapamiętywania. Dodano nowe kategorie: Zarządzanie pakietami, Czas i kalendarz, Konteneryzacja oraz Git i kontrola wersji.*

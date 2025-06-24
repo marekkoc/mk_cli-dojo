@@ -1,7 +1,7 @@
-# Lista 191 najważniejszych komend bash/Linux
+# Lista 197 najważniejszych komend bash/Linux
 
 ## Podsumowanie
-**Łączna liczba komend: 191**
+**Łączna liczba komend: 197**
 
 ---
 
@@ -270,6 +270,14 @@
 - `git-branch` - zarządzanie gałęziami
 - `git-merge` - scalanie gałęzi
 
+## 32. Pomoc i dokumentacja (6 komend)
+- `man` - podręcznik systemowy (manual pages)
+- `apropos` - wyszukiwanie komend po opisie
+- `whatis` - krótki opis komendy
+- `info` - szczegółowa dokumentacja (info pages)
+- `help` - pomoc dla wbudowanych komend bash
+- `type` - informacje o typie komendy (alias, funkcja, program)
+
 ---
 
 ## Wszystkie komendy w porządku alfabetycznym
@@ -279,6 +287,80 @@
 ---
 
 ## Przydatne przykłady użycia
+
+### Pomoc i dokumentacja
+```bash
+# Manual pages - podstawowa pomoc
+man ls                       # pełna dokumentacja komendy ls
+man 5 passwd                 # sekcja 5 - formaty plików
+man -k "copy files"          # wyszukanie w opisach manual pages
+
+# Apropos - wyszukiwanie komend po opisie
+apropos file                 # wszystkie komendy związane z plikami
+apropos compress             # komendy do kompresji
+apropos -r "^copy"          # komendy zaczynające się od "copy"
+apropos network | head -10   # pierwsze 10 komend sieciowych
+
+# Whatis - krótkie opisy
+whatis grep                  # krótki opis grep
+whatis cp mv rm              # opisy kilku komend naraz
+
+# Info pages - szczegółowa dokumentacja
+info bash                    # szczegółowa dokumentacja bash
+info tar                     # dokumentacja tar
+info --help                  # pomoc dla info
+
+# Help - pomoc dla wbudowanych komend
+help cd                      # pomoc dla cd (wbudowana komenda)
+help if                      # pomoc dla konstrukcji if
+help for                     # pomoc dla pętli for
+help                         # lista wszystkich wbudowanych komend
+
+# Type - informacje o typie komendy
+type ls                      # czy ls to alias, funkcja czy program
+type cd                      # cd to wbudowana komenda
+type ll                      # sprawdź czy ll to alias
+type -a ls                   # wszystkie definicje ls
+
+# Kombinacje przydatne w nauce
+man -f ls                    # to samo co whatis ls
+man -k file | grep copy      # wyszukaj komendy do kopiowania plików
+apropos "list directory"     # znajdź komendy do listowania katalogów
+```
+
+### Praktyczne kombinacje z dokumentacją
+```bash
+# Szybka pomoc podczas pracy
+quick_help() {
+    local cmd=$1
+    echo "=== Quick Help for: $cmd ==="
+    whatis $cmd 2>/dev/null || echo "No whatis entry found"
+    echo
+    type $cmd 2>/dev/null || echo "Command not found"
+    echo
+    echo "Manual page available:" $(man -w $cmd 2>/dev/null && echo "YES" || echo "NO")
+}
+
+# Znajdź komendy do konkretnego zadania
+find_commands() {
+    local task=$1
+    echo "Commands related to: $task"
+    apropos "$task" | head -10
+}
+
+# Eksplorator systemu pomocy
+explore_help() {
+    echo "=== System Help Explorer ==="
+    echo "1. Built-in commands:"
+    help | head -5
+    echo
+    echo "2. Available manual sections:"
+    man man | grep -A 10 "sections of the manual"
+    echo
+    echo "3. Info documents:"
+    info --help | head -5
+}
+```
 
 ### Zarządzanie pakietami - Debian/Ubuntu
 ```bash
@@ -521,4 +603,4 @@ done
 
 ---
 
-*Lista zawiera 191 najważniejszych komend bash/Linux pogrupowanych tematycznie dla łatwiejszego uczenia się i zapamiętywania. Dodano nowe kategorie: Zarządzanie pakietami, Czas i kalendarz, Konteneryzacja oraz Git i kontrola wersji.*
+*Lista zawiera 197 najważniejszych komend bash/Linux pogrupowanych tematycznie dla łatwiejszego uczenia się i zapamiętywania. Dodano nowe kategorie: Zarządzanie pakietami, Czas i kalendarz, Konteneryzacja, Git i kontrola wersji oraz Pomoc i dokumentacja.*

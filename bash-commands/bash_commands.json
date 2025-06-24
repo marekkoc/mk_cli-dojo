@@ -1,6 +1,6 @@
 {
   "bash_linux_commands": {
-    "total_count": 191,
+    "total_count": 197,
     "categories": {
       "podstawowe_operacje_na_plikach_i_katalogach": {
         "count": 11,
@@ -358,6 +358,17 @@
           "git-clone",
           "git-branch",
           "git-merge"
+        ]
+      },
+      "pomoc_i_dokumentacja": {
+        "count": 6,
+        "commands": [
+          "man",
+          "apropos",
+          "whatis",
+          "info",
+          "help",
+          "type"
         ]
       }
     },

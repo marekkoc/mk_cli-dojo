@@ -2,11 +2,17 @@
   "tasks": [
     {
       "id": 546,
-      "command": ["cut"],
+      "command": [
+        "cut"
+      ],
       "difficulty": 1,
       "rating": 2,
       "category": "text processing",
-      "tags": ["csv", "columns", "basic"],
+      "tags": [
+        "csv",
+        "columns",
+        "basic"
+      ],
       "task": "Extract the first column (usernames) from /etc/passwd file",
       "solution": "cut -d: -f1 /etc/passwd",
       "explanation": "cut -d: (use colon as delimiter) -f1 (select first field) /etc/passwd (system file with user accounts). The passwd file uses colon-separated fields where first field contains usernames",
@@ -17,14 +23,21 @@
     },
     {
       "id": 547,
-      "command": ["cut"],
+      "command": [
+        "echo",
+        "cut"
+      ],
       "difficulty": 1,
       "rating": 2,
       "category": "text processing",
-      "tags": ["character", "position", "basic"],
-      "task": "Extract characters 1-5 from each line in a file",
-      "solution": "cut -c1-5 filename.txt",
-      "explanation": "cut -c1-5 (select characters from position 1 to 5) filename.txt. Character positions are counted from 1, and ranges are inclusive on both ends",
+      "tags": [
+        "character",
+        "position",
+        "basic"
+      ],
+      "task": "Extract first 5 characters from each line of sample text data",
+      "solution": "echo -e \"Hello World\\nLinux Commands\\nText Processing\\n1234567890\" | cut -c1-5",
+      "explanation": "echo -e (enable interpretation of backslash escapes) \"Hello World\\\\nLinux Commands...\" (create multi-line sample data with \\\\n for newlines) | cut -c1-5 (extract characters 1-5 from each line). This extracts 'Hello', 'Linux', 'Text ', '12345'",
       "execution_time": "< 1 min",
       "requirements": null,
       "warnings": null,
@@ -32,11 +45,18 @@
     },
     {
       "id": 548,
-      "command": ["ls", "cut"],
+      "command": [
+        "ls",
+        "cut"
+      ],
       "difficulty": 2,
       "rating": 3,
       "category": "file management",
-      "tags": ["permissions", "parsing", "ls"],
+      "tags": [
+        "permissions",
+        "parsing",
+        "ls"
+      ],
       "task": "Show only file permissions from detailed file listing",
       "solution": "ls -l | cut -c1-10",
       "explanation": "ls -l (detailed listing with permissions, owner, size, etc.) | cut -c1-10 (extract first 10 characters which contain permission bits). The first 10 characters show file type and rwx permissions for user, group, and others",
@@ -47,11 +67,17 @@
     },
     {
       "id": 549,
-      "command": ["cut"],
+      "command": [
+        "cut"
+      ],
       "difficulty": 2,
       "rating": 2,
       "category": "text processing",
-      "tags": ["csv", "multiple_fields", "delimiter"],
+      "tags": [
+        "csv",
+        "multiple_fields",
+        "delimiter"
+      ],
       "task": "Extract username and home directory (1st and 6th fields) from /etc/passwd",
       "solution": "cut -d: -f1,6 /etc/passwd",
       "explanation": "cut -d: (colon delimiter) -f1,6 (select fields 1 and 6) /etc/passwd. Multiple fields are specified with commas. Field 1 is username, field 6 is home directory path",
@@ -62,29 +88,43 @@
     },
     {
       "id": 550,
-      "command": ["ls", "cut"],
+      "command": [
+        "ls",
+        "cut"
+      ],
       "difficulty": 2,
       "rating": 3,
       "category": "file management",
-      "tags": ["size", "ls", "columns"],
+      "tags": [
+        "size",
+        "ls",
+        "columns"
+      ],
       "task": "Extract only file sizes from detailed directory listing",
-      "solution": "ls -l | cut -c30-40",
-      "explanation": "ls -l (detailed listing) | cut -c30-40 (extract characters 30-40 where file sizes typically appear). This extracts the size column from ls -l output. Position may vary slightly based on system and filename lengths",
+      "solution": "ls -la /etc | cut -c30-42",
+      "explanation": "ls -la /etc (detailed listing of /etc directory) | cut -c30-42 (extract characters 30-42 where file sizes appear). Using /etc directory ensures files exist. Size column position may vary - adjust range if needed on your system",
       "execution_time": "< 1 min",
       "requirements": null,
-      "warnings": "Size column position may vary - check your ls -l output format first",
+      "warnings": "Size column position may vary between systems - check your ls -la output format first",
       "use_case": "Quick overview of file sizes without other file information"
     },
     {
       "id": 551,
-      "command": ["cut"],
+      "command": [
+        "echo",
+        "cut"
+      ],
       "difficulty": 3,
       "rating": 3,
       "category": "text processing",
-      "tags": ["range", "advanced", "multiple_ranges"],
-      "task": "Extract characters 1-3, 8-12, and 20-25 from each line",
-      "solution": "cut -c1-3,8-12,20-25 filename.txt",
-      "explanation": "cut -c1-3,8-12,20-25 (select multiple character ranges separated by commas) filename.txt. This extracts non-contiguous character ranges and concatenates them together in the output",
+      "tags": [
+        "range",
+        "advanced",
+        "multiple_ranges"
+      ],
+      "task": "Extract characters 1-3, 8-12, and 20-25 from sample text lines",
+      "solution": "echo -e \"abcdefghijklmnopqrstuvwxyz\\n123456789012345678901234567890\" | cut -c1-3,8-12,20-25",
+      "explanation": "echo -e (create sample data with alphabet and numbers) | cut -c1-3,8-12,20-25 (select multiple character ranges separated by commas). This extracts non-contiguous character ranges and concatenates them together in the output",
       "execution_time": "< 1 min",
       "requirements": null,
       "warnings": null,
@@ -92,11 +132,18 @@
     },
     {
       "id": 552,
-      "command": ["echo", "cut"],
+      "command": [
+        "echo",
+        "cut"
+      ],
       "difficulty": 2,
       "rating": 2,
       "category": "text processing",
-      "tags": ["delimiter", "space", "fields"],
+      "tags": [
+        "delimiter",
+        "space",
+        "fields"
+      ],
       "task": "Extract the 2nd word from space-separated text",
       "solution": "echo \"first second third fourth\" | cut -d' ' -f2",
       "explanation": "echo \"first second third fourth\" (create sample text) | cut -d' ' (use space as delimiter) -f2 (select second field). Single quotes around space in -d' ' ensure proper delimiter specification",
@@ -107,11 +154,18 @@
     },
     {
       "id": 553,
-      "command": ["ps", "cut"],
+      "command": [
+        "ps",
+        "cut"
+      ],
       "difficulty": 3,
       "rating": 4,
       "category": "system monitoring",
-      "tags": ["processes", "pid", "ps"],
+      "tags": [
+        "processes",
+        "pid",
+        "ps"
+      ],
       "task": "Extract only process IDs (PIDs) from running processes",
       "solution": "ps aux | cut -c10-15",
       "explanation": "ps aux (show all processes with detailed info) | cut -c10-15 (extract characters 10-15 where PID column appears). The PID is typically in columns 10-15 of ps aux output, but position may vary",
@@ -122,11 +176,18 @@
     },
     {
       "id": 554,
-      "command": ["cut", "sort"],
+      "command": [
+        "cut",
+        "sort"
+      ],
       "difficulty": 3,
       "rating": 4,
       "category": "text processing",
-      "tags": ["csv", "sorting", "pipeline"],
+      "tags": [
+        "csv",
+        "sorting",
+        "pipeline"
+      ],
       "task": "Extract and sort all user shells from /etc/passwd",
       "solution": "cut -d: -f7 /etc/passwd | sort | uniq",
       "explanation": "cut -d: -f7 /etc/passwd (extract 7th field - shell) | sort (alphabetically sort shells) | uniq (remove duplicates). This creates a list of unique shells used on the system",
@@ -137,14 +198,22 @@
     },
     {
       "id": 555,
-      "command": ["cut"],
+      "command": [
+        "echo",
+        "rev",
+        "cut"
+      ],
       "difficulty": 2,
       "rating": 3,
       "category": "text processing",
-      "tags": ["reverse", "from_end", "suffix"],
-      "task": "Extract last 5 characters from each line",
-      "solution": "rev filename.txt | cut -c1-5 | rev",
-      "explanation": "rev (reverse each line) | cut -c1-5 (take first 5 chars of reversed line) | rev (reverse back to original order). This technique extracts suffix by reversing, taking prefix, then reversing again",
+      "tags": [
+        "reverse",
+        "from_end",
+        "suffix"
+      ],
+      "task": "Extract last 5 characters from sample text lines",
+      "solution": "echo -e \"programming\\ndevelopment\\ntechnology\" | rev | cut -c1-5 | rev",
+      "explanation": "echo -e (create sample data) | rev (reverse each line) | cut -c1-5 (take first 5 chars of reversed line) | rev (reverse back to original order). This technique extracts suffix by reversing, taking prefix, then reversing again",
       "execution_time": "< 1 min",
       "requirements": null,
       "warnings": null,
@@ -152,14 +221,22 @@
     },
     {
       "id": 556,
-      "command": ["ls", "cut", "sort"],
+      "command": [
+        "ls",
+        "cut",
+        "sort"
+      ],
       "difficulty": 3,
       "rating": 4,
       "category": "file management",
-      "tags": ["filenames", "extensions", "analysis"],
-      "task": "Extract and count unique file extensions in current directory",
-      "solution": "ls -1 | grep '\\.' | cut -d. -f2- | sort | uniq -c",
-      "explanation": "ls -1 (one file per line) | grep '\\\\.' (only files with dots) | cut -d. -f2- (everything after first dot - the extension) | sort | uniq -c (count unique extensions). The -f2- means from field 2 to end of line",
+      "tags": [
+        "filenames",
+        "extensions",
+        "analysis"
+      ],
+      "task": "Extract and count unique file extensions in /etc directory",
+      "solution": "ls -1 /etc | grep '\\.' | cut -d. -f2- | sort | uniq -c",
+      "explanation": "ls -1 /etc (one file per line from /etc) | grep '\\\\.' (only files with dots) | cut -d. -f2- (everything after first dot - the extension) | sort | uniq -c (count unique extensions). The -f2- means from field 2 to end of line",
       "execution_time": "< 1 min",
       "requirements": null,
       "warnings": null,
@@ -167,20 +244,21 @@
     },
     {
       "id": 557,
-      "command": ["cut"],
+      "command": [
+        "echo",
+        "cut"
+      ],
       "difficulty": 4,
       "rating": 4,
       "category": "text processing",
-      "tags": ["csv", "tab_delimited", "complex"],
-      "task": "Extract fields 2, 4-6, and 9 from tab-delimited file",
-      "solution": "cut -d
-  ]
-}\\t' -f2,4-6,9 data.tsv",
-      "explanation": "cut -d
-  ]
-}\\\\t' (use tab as delimiter - 
-  ]
-}\\\\t' is bash syntax for tab character) -f2,4-6,9 (select field 2, fields 4 through 6, and field 9) data.tsv. This handles complex field selection from TSV files",
+      "tags": [
+        "csv",
+        "tab_delimited",
+        "complex"
+      ],
+      "task": "Extract fields 2, 4-6, and 9 from tab-delimited sample data",
+      "solution": "echo -e \"f1\\tf2\\tf3\\tf4\\tf5\\tf6\\tf7\\tf8\\tf9\\tf10\" | cut -d$'\\t' -f2,4-6,9",
+      "explanation": "echo -e (create tab-separated sample data) | cut -d$'\\\\t' (use tab as delimiter - $'\\\\t' is bash syntax for tab character) -f2,4-6,9 (select field 2, fields 4 through 6, and field 9). This handles complex field selection from TSV files",
       "execution_time": "< 1 min",
       "requirements": null,
       "warnings": null,
@@ -188,14 +266,21 @@
     },
     {
       "id": 558,
-      "command": ["cat", "cut"],
+      "command": [
+        "echo",
+        "cut"
+      ],
       "difficulty": 2,
       "rating": 3,
       "category": "text processing",
-      "tags": ["complement", "exclude", "inverse"],
-      "task": "Remove the first column from CSV file (keep all except first)",
-      "solution": "cut -d, -f2- data.csv",
-      "explanation": "cut -d, (comma delimiter) -f2- (from field 2 to end of line) data.csv. The dash after field number means 'to end', effectively removing the first column and keeping the rest",
+      "tags": [
+        "complement",
+        "exclude",
+        "inverse"
+      ],
+      "task": "Remove the first column from CSV sample data (keep all except first)",
+      "solution": "echo \"name,age,city,country\" | cut -d, -f2-",
+      "explanation": "echo \"name,age,city,country\" (create CSV sample data) | cut -d, (comma delimiter) -f2- (from field 2 to end of line). The dash after field number means 'to end', effectively removing the first column and keeping the rest",
       "execution_time": "< 1 min",
       "requirements": null,
       "warnings": null,
@@ -203,11 +288,18 @@
     },
     {
       "id": 559,
-      "command": ["echo", "cut"],
+      "command": [
+        "echo",
+        "cut"
+      ],
       "difficulty": 4,
       "rating": 5,
       "category": "text processing",
-      "tags": ["output_delimiter", "reformatting", "advanced"],
+      "tags": [
+        "output_delimiter",
+        "reformatting",
+        "advanced"
+      ],
       "task": "Convert colon-separated data to pipe-separated, extracting specific fields",
       "solution": "echo \"name:age:city:country\" | cut -d: -f1,3 --output-delimiter='|'",
       "explanation": "echo \"name:age:city:country\" (sample data) | cut -d: (input delimiter colon) -f1,3 (fields 1 and 3) --output-delimiter='|' (change output delimiter to pipe). This reformats data while extracting specific fields",
@@ -218,11 +310,18 @@
     },
     {
       "id": 560,
-      "command": ["cut", "wc"],
+      "command": [
+        "cut",
+        "wc"
+      ],
       "difficulty": 3,
       "rating": 3,
       "category": "text processing",
-      "tags": ["analysis", "counting", "pipeline"],
+      "tags": [
+        "analysis",
+        "counting",
+        "pipeline"
+      ],
       "task": "Count how many different home directories exist in /etc/passwd",
       "solution": "cut -d: -f6 /etc/passwd | sort | uniq | wc -l",
       "explanation": "cut -d: -f6 /etc/passwd (extract home directory field) | sort (sort paths) | uniq (remove duplicates) | wc -l (count lines). This counts unique home directory paths configured for users",

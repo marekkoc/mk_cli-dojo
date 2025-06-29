@@ -1,581 +1,484 @@
 {
   "bash_linux_commands": {
-    "total_count": 197,
+    "total_count": 211,
+    "last_updated": "2025-06-28",
+    "version": "2.0",
     "categories": {
       "podstawowe_operacje_na_plikach_i_katalogach": {
         "count": 11,
+        "description": "Podstawowe operacje na plikach i katalogach",
         "commands": [
-          "ls",
-          "cd",
-          "pwd",
-          "mkdir",
-          "rmdir",
-          "rm",
-          "cp",
-          "mv",
-          "find",
-          "locate",
-          "which"
+          {"name": "ls", "description": "listowanie plików i katalogów"},
+          {"name": "cd", "description": "zmiana katalogu"},
+          {"name": "pwd", "description": "wyświetlenie bieżącego katalogu"},
+          {"name": "mkdir", "description": "tworzenie katalogów"},
+          {"name": "rmdir", "description": "usuwanie pustych katalogów"},
+          {"name": "rm", "description": "usuwanie plików i katalogów"},
+          {"name": "cp", "description": "kopiowanie plików/katalogów"},
+          {"name": "mv", "description": "przenoszenie/zmiana nazwy plików"},
+          {"name": "find", "description": "wyszukiwanie plików i katalogów"},
+          {"name": "locate", "description": "szybkie wyszukiwanie plików"},
+          {"name": "which", "description": "lokalizacja programów"}
         ]
       },
       "przegladanie_i_edycja_plikow": {
-        "count": 11,
+        "count": 12,
+        "description": "Przeglądanie i edycja plików",
         "commands": [
-          "cat",
-          "less",
-          "more",
-          "head",
-          "tail",
-          "grep",
-          "sed",
-          "awk",
-          "sort",
-          "uniq",
-          "wc"
+          {"name": "cat", "description": "wyświetlenie zawartości pliku"},
+          {"name": "less", "description": "przeglądanie długich plików"},
+          {"name": "more", "description": "przeglądanie długich plików (starsze)"},
+          {"name": "head", "description": "wyświetlenie pierwszych linii pliku"},
+          {"name": "tail", "description": "wyświetlenie ostatnich linii pliku"},
+          {"name": "grep", "description": "wyszukiwanie tekstu w plikach"},
+          {"name": "sed", "description": "edycja tekstu ze strumienia"},
+          {"name": "awk", "description": "przetwarzanie tekstu i danych"},
+          {"name": "sort", "description": "sortowanie linii"},
+          {"name": "uniq", "description": "usuwanie duplikatów"},
+          {"name": "wc", "description": "liczenie linii, słów, znaków"},
+          {"name": "multitail", "description": "monitorowanie wielu plików logów jednocześnie"}
         ]
       },
       "uprawnienia_i_wlasciciele": {
         "count": 4,
+        "description": "Uprawnienia i właściciele",
         "commands": [
-          "chmod",
-          "chown",
-          "chgrp",
-          "umask"
+          {"name": "chmod", "description": "zmiana uprawnień plików"},
+          {"name": "chown", "description": "zmiana właściciela plików"},
+          {"name": "chgrp", "description": "zmiana grupy plików"},
+          {"name": "umask", "description": "ustawienie domyślnych uprawnień"}
         ]
       },
       "procesy_i_system": {
         "count": 9,
+        "description": "Procesy i system",
         "commands": [
-          "ps",
-          "top",
-          "htop",
-          "kill",
-          "killall",
-          "jobs",
-          "bg",
-          "fg",
-          "nohup"
+          {"name": "ps", "description": "wyświetlenie uruchomionych procesów"},
+          {"name": "top", "description": "monitorowanie procesów w czasie rzeczywistym"},
+          {"name": "htop", "description": "ulepszona wersja top"},
+          {"name": "kill", "description": "kończenie procesów"},
+          {"name": "killall", "description": "kończenie procesów po nazwie"},
+          {"name": "jobs", "description": "wyświetlenie zadań w tle"},
+          {"name": "bg", "description": "praca z zadaniami w tle"},
+          {"name": "fg", "description": "praca z zadaniami w pierwszym planie"},
+          {"name": "nohup", "description": "uruchamianie procesów niezależnie od terminala"}
         ]
       },
       "informacje_o_systemie": {
         "count": 8,
+        "description": "Informacje o systemie",
         "commands": [
-          "df",
-          "du",
-          "free",
-          "uname",
-          "whoami",
-          "id",
-          "uptime",
-          "date"
+          {"name": "df", "description": "wykorzystanie przestrzeni dyskowej"},
+          {"name": "du", "description": "rozmiar katalogów i plików"},
+          {"name": "free", "description": "informacje o pamięci"},
+          {"name": "uname", "description": "informacje o systemie"},
+          {"name": "whoami", "description": "bieżący użytkownik"},
+          {"name": "id", "description": "informacje o użytkowniku i grupach"},
+          {"name": "uptime", "description": "czas działania systemu"},
+          {"name": "date", "description": "data i czas systemowy"}
         ]
       },
       "siec_podstawowe": {
         "count": 5,
+        "description": "Sieć podstawowe",
         "commands": [
-          "wget",
-          "curl",
-          "ssh",
-          "scp",
-          "rsync"
+          {"name": "wget", "description": "pobieranie plików z internetu"},
+          {"name": "curl", "description": "pobieranie plików z internetu (zaawansowane)"},
+          {"name": "ssh", "description": "zdalne połączenie"},
+          {"name": "scp", "description": "kopiowanie plików przez SSH"},
+          {"name": "rsync", "description": "synchronizacja plików"}
         ]
       },
       "archiwizacja_i_kompresja": {
         "count": 5,
+        "description": "Archiwizacja i kompresja",
         "commands": [
-          "tar",
-          "gzip",
-          "gunzip",
-          "zip",
-          "unzip"
+          {"name": "tar", "description": "archiwizacja plików"},
+          {"name": "gzip", "description": "kompresja plików"},
+          {"name": "gunzip", "description": "dekompresja plików gzip"},
+          {"name": "zip", "description": "tworzenie archiwów ZIP"},
+          {"name": "unzip", "description": "rozpakowywanie archiwów ZIP"}
         ]
       },
       "zarzadzanie_historia_i_sesja": {
         "count": 4,
+        "description": "Zarządzanie historią i sesją",
         "commands": [
-          "history",
-          "alias",
-          "export",
-          "source"
+          {"name": "history", "description": "historia komend"},
+          {"name": "alias", "description": "tworzenie aliasów komend"},
+          {"name": "export", "description": "ustawianie zmiennych środowiskowych"},
+          {"name": "source", "description": "wykonanie skryptu w bieżącej sesji"}
         ]
       },
       "przekierowania_i_rurki": {
         "count": 2,
+        "description": "Przekierowania i rurki",
         "commands": [
-          "tee",
-          "pipe_operators"
+          {"name": "tee", "description": "zapis do pliku i wyświetlenie na ekranie"},
+          {"name": "pipe_operators", "description": "przekazanie wyjścia jako wejście (pipe)"}
         ]
       },
       "kontrola_zadan": {
         "count": 4,
+        "description": "Kontrola zadań",
         "commands": [
-          "crontab",
-          "at",
-          "screen",
-          "tmux"
+          {"name": "crontab", "description": "harmonogram zadań"},
+          {"name": "at", "description": "jednorazowe zadania"},
+          {"name": "screen", "description": "sesje terminala"},
+          {"name": "tmux", "description": "zaawansowane sesje terminala"}
         ]
       },
       "siec_zaawansowane": {
         "count": 16,
+        "description": "Sieć zaawansowane",
         "commands": [
-          "ping",
-          "netstat",
-          "ss",
-          "nmap",
-          "telnet",
-          "nc",
-          "lsof",
-          "iptables",
-          "route",
-          "ip",
-          "ifconfig",
-          "dig",
-          "nslookup",
-          "host",
-          "traceroute",
-          "mtr"
+          {"name": "ping", "description": "testowanie połączenia sieciowego"},
+          {"name": "netstat", "description": "wyświetlanie połączeń sieciowych i portów"},
+          {"name": "ss", "description": "nowoczesna alternatywa dla netstat"},
+          {"name": "nmap", "description": "skanowanie portów i sieci"},
+          {"name": "telnet", "description": "testowanie połączenia z konkretnym portem"},
+          {"name": "nc", "description": "uniwersalne narzędzie sieciowe (netcat)"},
+          {"name": "lsof", "description": "wyświetlanie otwartych plików i portów"},
+          {"name": "iptables", "description": "konfiguracja firewalla"},
+          {"name": "route", "description": "wyświetlanie i modyfikacja tabeli routingu"},
+          {"name": "ip", "description": "nowoczesne narzędzie do konfiguracji sieci"},
+          {"name": "ifconfig", "description": "konfiguracja interfejsów sieciowych"},
+          {"name": "dig", "description": "zapytania DNS"},
+          {"name": "nslookup", "description": "zapytania DNS (starsze)"},
+          {"name": "host", "description": "proste zapytania DNS"},
+          {"name": "traceroute", "description": "śledzenie trasy pakietów"},
+          {"name": "mtr", "description": "kombinacja ping i traceroute"}
         ]
       },
       "struktura_katalogow": {
         "count": 1,
+        "description": "Struktura katalogów",
         "commands": [
-          "tree"
+          {"name": "tree", "description": "wyświetlanie struktury katalogów w formie drzewa"}
         ]
       },
       "zaawansowane_operacje_na_tekscie": {
         "count": 6,
+        "description": "Zaawansowane operacje na tekście",
         "commands": [
-          "cut",
-          "tr",
-          "paste",
-          "join",
-          "diff",
-          "patch"
+          {"name": "cut", "description": "wycinanie kolumn z tekstu"},
+          {"name": "tr", "description": "zamiana/usuwanie znaków"},
+          {"name": "paste", "description": "łączenie linii z plików"},
+          {"name": "join", "description": "łączenie plików po wspólnych polach"},
+          {"name": "diff", "description": "porównywanie plików"},
+          {"name": "patch", "description": "aplikowanie poprawek"}
         ]
       },
       "monitorowanie_i_diagnostyka": {
         "count": 9,
+        "description": "Monitorowanie i diagnostyka",
         "commands": [
-          "iostat",
-          "vmstat",
-          "sar",
-          "strace",
-          "ltrace",
-          "dmesg",
-          "lscpu",
-          "lsblk",
-          "fdisk"
+          {"name": "iostat", "description": "statystyki I/O"},
+          {"name": "vmstat", "description": "statystyki pamięci wirtualnej"},
+          {"name": "sar", "description": "zbieranie statystyk systemowych"},
+          {"name": "strace", "description": "śledzenie wywołań systemowych"},
+          {"name": "ltrace", "description": "śledzenie wywołań bibliotek"},
+          {"name": "dmesg", "description": "komunikaty kernela"},
+          {"name": "lscpu", "description": "informacje o procesorze"},
+          {"name": "lsblk", "description": "informacje o urządzeniach blokowych"},
+          {"name": "fdisk", "description": "zarządzanie partycjami"}
         ]
       },
       "zarzadzanie_uzytkownikami": {
         "count": 6,
+        "description": "Zarządzanie użytkownikami",
         "commands": [
-          "su",
-          "sudo",
-          "passwd",
-          "useradd",
-          "usermod",
-          "groups"
+          {"name": "su", "description": "zmiana użytkownika"},
+          {"name": "sudo", "description": "wykonanie komendy jako inny użytkownik"},
+          {"name": "passwd", "description": "zmiana hasła"},
+          {"name": "useradd", "description": "dodawanie użytkowników"},
+          {"name": "usermod", "description": "modyfikacja użytkowników"},
+          {"name": "groups", "description": "wyświetlenie grup użytkownika"}
         ]
       },
       "zaawansowane_narzedzia": {
         "count": 5,
+        "description": "Zaawansowane narzędzia",
         "commands": [
-          "xargs",
-          "parallel",
-          "watch",
-          "timeout",
-          "yes"
+          {"name": "xargs", "description": "przekazywanie argumentów do komend"},
+          {"name": "parallel", "description": "równoległe wykonywanie komend"},
+          {"name": "watch", "description": "cykliczne wykonywanie komendy"},
+          {"name": "timeout", "description": "wykonanie komendy z limitem czasu"},
+          {"name": "yes", "description": "generowanie nieskończonego strumienia tekstu"}
         ]
       },
       "systemowe_i_diagnostyczne": {
         "count": 13,
+        "description": "Systemowe i diagnostyczne",
         "commands": [
-          "systemctl",
-          "service",
-          "mount",
-          "umount",
-          "lsmod",
-          "modprobe",
-          "dstat",
-          "iotop",
-          "nethogs",
-          "lshw",
-          "hwinfo",
-          "sensors",
-          "parted"
+          {"name": "systemctl", "description": "zarządzanie usługami systemd"},
+          {"name": "service", "description": "zarządzanie usługami (starsze systemy)"},
+          {"name": "mount", "description": "montowanie systemów plików"},
+          {"name": "umount", "description": "odmontowywanie systemów plików"},
+          {"name": "lsmod", "description": "wyświetlanie załadowanych modułów kernela"},
+          {"name": "modprobe", "description": "ładowanie/wyładowywanie modułów kernela"},
+          {"name": "dstat", "description": "wszechstronne statystyki systemowe"},
+          {"name": "iotop", "description": "monitorowanie I/O procesów"},
+          {"name": "nethogs", "description": "monitorowanie użycia sieci przez procesy"},
+          {"name": "lshw", "description": "informacje o sprzęcie"},
+          {"name": "hwinfo", "description": "szczegółowe informacje o sprzęcie"},
+          {"name": "sensors", "description": "temperatury i napięcia sprzętu"},
+          {"name": "parted", "description": "zaawansowane zarządzanie partycjami"}
         ]
       },
       "edytory_tekstu": {
         "count": 4,
+        "description": "Edytory tekstu",
         "commands": [
-          "nano",
-          "vim",
-          "vi",
-          "emacs"
+          {"name": "nano", "description": "prosty edytor tekstu"},
+          {"name": "vim", "description": "zaawansowany edytor tekstu"},
+          {"name": "vi", "description": "podstawowy edytor tekstu"},
+          {"name": "emacs", "description": "zaawansowany edytor tekstu"}
         ]
       },
       "zaawansowane_narzedzia_tekstowe": {
         "count": 8,
+        "description": "Zaawansowane narzędzia tekstowe",
         "commands": [
-          "column",
-          "fold",
-          "expand",
-          "unexpand",
-          "nl",
-          "pr",
-          "fmt",
-          "split"
+          {"name": "column", "description": "formatowanie tekstu w kolumny"},
+          {"name": "fold", "description": "zawijanie długich linii"},
+          {"name": "expand", "description": "konwersja tabulatorów na spacje"},
+          {"name": "unexpand", "description": "konwersja spacji na tabulatory"},
+          {"name": "nl", "description": "numerowanie linii"},
+          {"name": "pr", "description": "formatowanie tekstu do druku"},
+          {"name": "fmt", "description": "formatowanie akapitów"},
+          {"name": "split", "description": "dzielenie plików na części"}
         ]
       },
       "pliki_binarne": {
         "count": 7,
+        "description": "Pliki binarne",
         "commands": [
-          "hexdump",
-          "xxd",
-          "od",
-          "strings",
-          "file",
-          "stat",
-          "dcmdump"
+          {"name": "hexdump", "description": "wyświetlanie plików w hex"},
+          {"name": "xxd", "description": "hex dump z możliwością edycji"},
+          {"name": "od", "description": "dump oktalny/hex plików"},
+          {"name": "strings", "description": "wyciąganie tekstów z plików binarnych"},
+          {"name": "file", "description": "określanie typu pliku"},
+          {"name": "stat", "description": "szczegółowe informacje o pliku"},
+          {"name": "dcmdump", "description": "dump plików DICOM"}
         ]
       },
       "bezpieczenstwo_i_szyfrowanie": {
         "count": 5,
+        "description": "Bezpieczeństwo i szyfrowanie",
         "commands": [
-          "gpg",
-          "openssl",
-          "sha256sum",
-          "md5sum",
-          "base64"
+          {"name": "gpg", "description": "szyfrowanie i podpisy cyfrowe"},
+          {"name": "openssl", "description": "narzędzia kryptograficzne"},
+          {"name": "sha256sum", "description": "obliczanie sum kontrolnych SHA256"},
+          {"name": "md5sum", "description": "obliczanie sum kontrolnych MD5"},
+          {"name": "base64", "description": "kodowanie/dekodowanie base64"}
         ]
       },
       "logi": {
         "count": 4,
+        "description": "Logi",
         "commands": [
-          "journalctl",
-          "logger",
-          "logrotate",
-          "zcat"
+          {"name": "journalctl", "description": "przegląd logów systemd"},
+          {"name": "logger", "description": "zapisywanie do syslog"},
+          {"name": "logrotate", "description": "rotacja plików logów"},
+          {"name": "zcat", "description": "czytanie skompresowanych plików"}
         ]
       },
       "srodowisko_i_zmienne": {
         "count": 4,
+        "description": "Środowisko i zmienne",
         "commands": [
-          "env",
-          "printenv",
-          "set",
-          "unset"
+          {"name": "env", "description": "wyświetlanie zmiennych środowiskowych"},
+          {"name": "printenv", "description": "wyświetlanie zmiennych środowiskowych"},
+          {"name": "set", "description": "ustawianie opcji shella"},
+          {"name": "unset", "description": "usuwanie zmiennych"}
         ]
       },
       "pliki_specjalne": {
         "count": 4,
+        "description": "Pliki specjalne",
         "commands": [
-          "mkfifo",
-          "ln",
-          "readlink",
-          "blkid"
+          {"name": "mkfifo", "description": "tworzenie nazwanych pipe'ów"},
+          {"name": "ln", "description": "tworzenie linków"},
+          {"name": "readlink", "description": "odczytywanie linków symbolicznych"},
+          {"name": "blkid", "description": "informacje o urządzeniach blokowych"}
         ]
       },
       "komunikacja": {
         "count": 3,
+        "description": "Komunikacja",
         "commands": [
-          "write",
-          "wall",
-          "mesg"
+          {"name": "write", "description": "wysyłanie wiadomości do użytkowników"},
+          {"name": "wall", "description": "wysyłanie wiadomości do wszystkich"},
+          {"name": "mesg", "description": "kontrola odbioru wiadomości"}
         ]
       },
       "procesy_i_sygnaly": {
         "count": 4,
+        "description": "Procesy i sygnały",
         "commands": [
-          "pgrep",
-          "pkill",
-          "trap",
-          "exec"
+          {"name": "pgrep", "description": "wyszukiwanie procesów po nazwie"},
+          {"name": "pkill", "description": "kończenie procesów po nazwie"},
+          {"name": "trap", "description": "obsługa sygnałów w skryptach"},
+          {"name": "exec", "description": "zastąpienie bieżącego procesu"}
         ]
       },
       "zarzadzanie_zasilaniem": {
         "count": 5,
+        "description": "Zarządzanie zasilaniem",
         "commands": [
-          "shutdown",
-          "reboot",
-          "halt",
-          "poweroff",
-          "init"
+          {"name": "shutdown", "description": "wyłączanie/restart systemu"},
+          {"name": "reboot", "description": "restart systemu"},
+          {"name": "halt", "description": "zatrzymanie systemu"},
+          {"name": "poweroff", "description": "wyłączenie zasilania"},
+          {"name": "init", "description": "zmiana poziomu uruchomienia systemu"}
         ]
       },
       "zarzadzanie_pakietami": {
         "count": 10,
+        "description": "Zarządzanie pakietami",
         "commands": [
-          "apt",
-          "apt-get",
-          "apt-cache",
-          "dpkg",
-          "dpkg-query",
-          "yum",
-          "dnf",
-          "rpm",
-          "snap",
-          "flatpak"
+          {"name": "apt", "description": "nowoczesny interfejs zarządzania pakietami (Debian/Ubuntu)"},
+          {"name": "apt-get", "description": "tradycyjny interfejs APT (Debian/Ubuntu)"},
+          {"name": "apt-cache", "description": "wyszukiwanie i informacje o pakietach APT"},
+          {"name": "dpkg", "description": "niskopoziomowe zarządzanie pakietami .deb"},
+          {"name": "dpkg-query", "description": "zapytania o zainstalowane pakiety .deb"},
+          {"name": "yum", "description": "zarządzanie pakietami (RHEL/CentOS)"},
+          {"name": "dnf", "description": "zarządzanie pakietami (Fedora)"},
+          {"name": "rpm", "description": "niskopoziomowe zarządzanie pakietami .rpm"},
+          {"name": "snap", "description": "zarządzanie pakietami snap"},
+          {"name": "flatpak", "description": "zarządzanie pakietami flatpak"}
         ]
       },
       "czas_i_kalendarz": {
         "count": 8,
+        "description": "Czas i kalendarz",
         "commands": [
-          "cal",
-          "calendar",
-          "time",
-          "timedatectl",
-          "hwclock",
-          "ntpdate",
-          "chrony",
-          "zdump"
+          {"name": "cal", "description": "wyświetlanie kalendarza"},
+          {"name": "calendar", "description": "przypomnienia kalendarzowe"},
+          {"name": "time", "description": "pomiar czasu wykonania komendy"},
+          {"name": "timedatectl", "description": "zarządzanie czasem systemowym (systemd)"},
+          {"name": "hwclock", "description": "zarządzanie zegarem sprzętowym"},
+          {"name": "ntpdate", "description": "synchronizacja czasu przez NTP"},
+          {"name": "chrony", "description": "demon synchronizacji czasu (nowoczesny)"},
+          {"name": "zdump", "description": "informacje o strefach czasowych"}
         ]
       },
       "konteneryzacja": {
         "count": 8,
+        "description": "Konteneryzacja",
         "commands": [
-          "docker",
-          "docker-compose",
-          "podman",
-          "buildah",
-          "skopeo",
-          "kubectl",
-          "helm",
-          "crictl"
+          {"name": "docker", "description": "zarządzanie kontenerami Docker"},
+          {"name": "docker-compose", "description": "orkiestracja kontenerów Docker"},
+          {"name": "podman", "description": "alternatywa dla Docker (bez demona)"},
+          {"name": "buildah", "description": "budowanie obrazów kontenerów"},
+          {"name": "skopeo", "description": "operacje na obrazach kontenerów"},
+          {"name": "kubectl", "description": "zarządzanie klastrami Kubernetes"},
+          {"name": "helm", "description": "menedżer pakietów Kubernetes"},
+          {"name": "crictl", "description": "CLI dla Container Runtime Interface"}
         ]
       },
       "git_i_kontrola_wersji": {
         "count": 10,
+        "description": "Git i kontrola wersji",
         "commands": [
-          "git",
-          "git-log",
-          "git-diff",
-          "git-status",
-          "git-commit",
-          "git-push",
-          "git-pull",
-          "git-clone",
-          "git-branch",
-          "git-merge"
+          {"name": "git", "description": "system kontroli wersji"},
+          {"name": "git-log", "description": "historia commitów"},
+          {"name": "git-diff", "description": "porównywanie zmian w plikach"},
+          {"name": "git-status", "description": "status repozytorium"},
+          {"name": "git-commit", "description": "zatwierdzanie zmian"},
+          {"name": "git-push", "description": "wysyłanie zmian do zdalnego repozytorium"},
+          {"name": "git-pull", "description": "pobieranie zmian ze zdalnego repozytorium"},
+          {"name": "git-clone", "description": "klonowanie repozytorium"},
+          {"name": "git-branch", "description": "zarządzanie gałęziami"},
+          {"name": "git-merge", "description": "scalanie gałęzi"}
         ]
       },
       "pomoc_i_dokumentacja": {
         "count": 6,
+        "description": "Pomoc i dokumentacja",
         "commands": [
-          "man",
-          "apropos",
-          "whatis",
-          "info",
-          "help",
-          "type"
+          {"name": "man", "description": "podręcznik systemowy (manual pages)"},
+          {"name": "apropos", "description": "wyszukiwanie komend po opisie"},
+          {"name": "whatis", "description": "krótki opis komendy"},
+          {"name": "info", "description": "szczegółowa dokumentacja (info pages)"},
+          {"name": "help", "description": "pomoc dla wbudowanych komend bash"},
+          {"name": "type", "description": "informacje o typie komendy (alias, funkcja, program)"}
+        ]
+      },
+      "praca_ze_schowkiem": {
+        "count": 2,
+        "description": "Praca ze schowkiem",
+        "commands": [
+          {"name": "xclip", "description": "operacje na schowku X11 z linii komend"},
+          {"name": "xsel", "description": "alternatywa dla xclip do zarządzania schowkiem"}
+        ]
+      },
+      "zaawansowane_monitorowanie_logow": {
+        "count": 2,
+        "description": "Zaawansowane monitorowanie logów",
+        "commands": [
+          {"name": "multitail", "description": "monitorowanie wielu plików logów jednocześnie"},
+          {"name": "goaccess", "description": "analizator logów WWW w czasie rzeczywistym"}
+        ]
+      },
+      "przetwarzanie_danych_i_json": {
+        "count": 1,
+        "description": "Przetwarzanie danych i JSON",
+        "commands": [
+          {"name": "jq", "description": "procesor JSON z linii komend - filtrowanie, transformacja, formatowanie"}
+        ]
+      },
+      "nowoczesne_alternatywy_narzedzi_systemowych": {
+        "count": 8,
+        "description": "Nowoczesne alternatywy narzędzi systemowych",
+        "commands": [
+          {"name": "ripgrep", "description": "bardzo szybka alternatywa dla grep z obsługą regex", "alias": "rg"},
+          {"name": "fd", "description": "nowoczesna, szybka alternatywa dla find"},
+          {"name": "bat", "description": "cat z podświetlaniem składni i numerowaniem linii"},
+          {"name": "exa", "description": "nowoczesna alternatywa dla ls z kolorami i ikonami"},
+          {"name": "zoxide", "description": "inteligentne cd z historią i fuzzy matching"},
+          {"name": "fzf", "description": "interaktywny fuzzy finder do filtrowania i wyszukiwania"},
+          {"name": "tmuxinator", "description": "zarządzanie i automatyzacja sesji tmux"},
+          {"name": "htop", "description": "już na liście w sekcji 4, ale warto podkreślić jako nowoczesną alternatywę dla top"}
         ]
       }
     },
     "all_commands_alphabetical": [
-      "alias",
-      "apt",
-      "apt-cache",
-      "apt-get",
-      "at",
-      "awk",
-      "base64",
-      "bg",
-      "blkid",
-      "buildah",
-      "cal",
-      "calendar",
-      "cat",
-      "cd",
-      "chmod",
-      "chgrp",
-      "chown",
-      "chrony",
-      "column",
-      "cp",
-      "crictl",
-      "crontab",
-      "curl",
-      "cut",
-      "date",
-      "dcmdump",
-      "df",
-      "diff",
-      "dig",
-      "dmesg",
-      "dnf",
-      "docker",
-      "docker-compose",
-      "dpkg",
-      "dpkg-query",
-      "dstat",
-      "du",
-      "emacs",
-      "env",
-      "exec",
-      "expand",
-      "export",
-      "fdisk",
-      "fg",
-      "file",
-      "find",
-      "flatpak",
-      "fmt",
-      "fold",
-      "free",
-      "git",
-      "git-branch",
-      "git-clone",
-      "git-commit",
-      "git-diff",
-      "git-log",
-      "git-merge",
-      "git-pull",
-      "git-push",
-      "git-status",
-      "gpg",
-      "grep",
-      "groups",
-      "gunzip",
-      "gzip",
-      "halt",
-      "head",
-      "helm",
-      "hexdump",
-      "history",
-      "host",
-      "htop",
-      "hwclock",
-      "hwinfo",
-      "id",
-      "ifconfig",
-      "init",
-      "iostat",
-      "iotop",
-      "ip",
-      "iptables",
-      "jobs",
-      "join",
-      "journalctl",
-      "kill",
-      "killall",
-      "kubectl",
-      "less",
-      "ln",
-      "locate",
-      "logger",
-      "logrotate",
-      "ls",
-      "lsblk",
-      "lscpu",
-      "lshw",
-      "lsmod",
-      "lsof",
-      "ltrace",
-      "md5sum",
-      "mesg",
-      "mkdir",
-      "mkfifo",
-      "modprobe",
-      "more",
-      "mount",
-      "mtr",
-      "mv",
-      "nano",
-      "nc",
-      "nethogs",
-      "netstat",
-      "nl",
-      "nmap",
-      "nohup",
-      "nslookup",
-      "ntpdate",
-      "od",
-      "openssl",
-      "parallel",
-      "parted",
-      "passwd",
-      "paste",
-      "patch",
-      "pgrep",
-      "ping",
-      "pipe_operators",
-      "pkill",
-      "podman",
-      "poweroff",
-      "pr",
-      "printenv",
-      "ps",
-      "pwd",
-      "readlink",
-      "reboot",
-      "rm",
-      "rmdir",
-      "route",
-      "rpm",
-      "rsync",
-      "sar",
-      "scp",
-      "screen",
-      "sed",
-      "sensors",
-      "service",
-      "set",
-      "sha256sum",
-      "shutdown",
-      "skopeo",
-      "snap",
-      "sort",
-      "source",
-      "split",
-      "ss",
-      "ssh",
-      "stat",
-      "strace",
-      "strings",
-      "su",
-      "sudo",
-      "systemctl",
-      "tail",
-      "tar",
-      "tee",
-      "telnet",
-      "time",
-      "timedatectl",
-      "timeout",
-      "tmux",
-      "top",
-      "tr",
-      "traceroute",
-      "trap",
-      "tree",
-      "umask",
-      "umount",
-      "uname",
-      "unexpand",
-      "uniq",
-      "unset",
-      "unzip",
-      "uptime",
-      "useradd",
-      "usermod",
-      "vi",
-      "vim",
-      "vmstat",
-      "wall",
-      "watch",
-      "wc",
-      "wget",
-      "which",
-      "whoami",
-      "write",
-      "xargs",
-      "xxd",
-      "yes",
-      "yum",
-      "zcat",
-      "zdump",
-      "zip"
-    ]
+      "alias", "apt", "apt-cache", "apt-get", "at", "awk", "base64", "bat", "bg", "blkid", "buildah", 
+      "cal", "calendar", "cat", "cd", "chmod", "chgrp", "chown", "chrony", "column", "cp", "crictl", 
+      "crontab", "curl", "cut", "date", "dcmdump", "df", "diff", "dig", "dmesg", "dnf", "docker", 
+      "docker-compose", "dpkg", "dpkg-query", "dstat", "du", "emacs", "env", "exa", "exec", "expand", 
+      "export", "fd", "fdisk", "fg", "file", "find", "flatpak", "fmt", "fold", "free", "fzf", "git", 
+      "git-branch", "git-clone", "git-commit", "git-diff", "git-log", "git-merge", "git-pull", 
+      "git-push", "git-status", "goaccess", "gpg", "grep", "groups", "gunzip", "gzip", "halt", "head", 
+      "helm", "hexdump", "history", "host", "htop", "hwclock", "hwinfo", "id", "ifconfig", "init", 
+      "iostat", "iotop", "ip", "iptables", "jobs", "join", "journalctl", "jq", "kill", "killall", 
+      "kubectl", "less", "ln", "locate", "logger", "logrotate", "ls", "lsblk", "lscpu", "lshw", 
+      "lsmod", "lsof", "ltrace", "md5sum", "mesg", "mkdir", "mkfifo", "modprobe", "more", "mount", 
+      "mtr", "multitail", "mv", "nano", "nc", "nethogs", "netstat", "nl", "nmap", "nohup", "nslookup", 
+      "ntpdate", "od", "openssl", "parallel", "parted", "passwd", "paste", "patch", "pgrep", "ping", 
+      "pkill", "podman", "poweroff", "pr", "printenv", "ps", "pwd", "readlink", "reboot", "rg", 
+      "ripgrep", "rm", "rmdir", "route", "rpm", "rsync", "sar", "scp", "screen", "sed", "sensors", 
+      "service", "set", "sha256sum", "shutdown", "skopeo", "snap", "sort", "source", "split", "ss", 
+      "ssh", "stat", "strace", "strings", "su", "sudo", "systemctl", "tail", "tar", "tee", "telnet", 
+      "time", "timedatectl", "timeout", "tmux", "tmuxinator", "top", "tr", "traceroute", "trap", 
+      "tree", "umask", "umount", "uname", "unexpand", "uniq", "unset", "unzip", "uptime", "useradd", 
+      "usermod", "vi", "vim", "vmstat", "wall", "watch", "wc", "wget", "which", "whoami", "write", 
+      "xargs", "xclip", "xsel", "xxd", "yes", "yum", "zcat", "zdump", "zip", "zoxide"
+    ],
+    "statistics": {
+      "categories_count": 36,
+      "most_populated_category": {
+        "name": "siec_zaawansowane",
+        "count": 16
+      },
+      "least_populated_categories": [
+        {"name": "struktura_katalogow", "count": 1},
+        {"name": "przetwarzanie_danych_i_json", "count": 1}
+      ],
+      "modern_tools_count": 8,
+      "traditional_tools_count": 203
+    }
   }
 }

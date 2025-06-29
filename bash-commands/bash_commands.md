@@ -1,7 +1,9 @@
-# Lista 197 najważniejszych komend bash/Linux
+# Lista 211 najważniejszych komend bash/Linux
 
 ## Podsumowanie
-**Łączna liczba komend: 197**
+**Łączna liczba komend: 211**
+**Ostatnia aktualizacja: 2025-06-28**
+**Wersja: 2.0**
 
 ---
 
@@ -18,7 +20,7 @@
 - `locate` - szybkie wyszukiwanie plików
 - `which` - lokalizacja programów
 
-## 2. Przeglądanie i edycja plików (11 komend)
+## 2. Przeglądanie i edycja plików (12 komend)
 - `cat` - wyświetlenie zawartości pliku
 - `less` - przeglądanie długich plików
 - `more` - przeglądanie długich plików (starsze)
@@ -30,6 +32,7 @@
 - `sort` - sortowanie linii
 - `uniq` - usuwanie duplikatów
 - `wc` - liczenie linii, słów, znaków
+- `multitail` - monitorowanie wielu plików logów jednocześnie
 
 ## 3. Uprawnienia i właściciele (4 komendy)
 - `chmod` - zmiana uprawnień plików
@@ -278,15 +281,36 @@
 - `help` - pomoc dla wbudowanych komend bash
 - `type` - informacje o typie komendy (alias, funkcja, program)
 
+## 33. Praca ze schowkiem (2 komendy) 
+- `xclip` - operacje na schowku X11 z linii komend
+- `xsel` - alternatywa dla xclip do zarządzania schowkiem
+
+## 34. Zaawansowane monitorowanie logów (2 komendy)
+- `multitail` - monitorowanie wielu plików logów jednocześnie
+- `goaccess` - analizator logów WWW w czasie rzeczywistym
+
+## 35. Przetwarzanie danych i JSON (1 komenda)
+- `jq` - procesor JSON z linii komend - filtrowanie, transformacja, formatowanie
+
+## 36. Nowoczesne alternatywy narzędzi systemowych (8 komend)
+- `ripgrep` (`rg`) - bardzo szybka alternatywa dla grep z obsługą regex
+- `fd` - nowoczesna, szybka alternatywa dla find
+- `bat` - cat z podświetlaniem składni i numerowaniem linii
+- `exa` - nowoczesna alternatywa dla ls z kolorami i ikonami
+- `zoxide` - inteligentne cd z historią i fuzzy matching
+- `fzf` - interaktywny fuzzy finder do filtrowania i wyszukiwania
+- `tmuxinator` - zarządzanie i automatyzacja sesji tmux
+- `htop` - już na liście w sekcji 4, ale warto podkreślić jako nowoczesną alternatywę dla top
+
 ---
 
 ## Wszystkie komendy w porządku alfabetycznym
 
-`alias`, `apt`, `apt-cache`, `apt-get`, `at`, `awk`, `base64`, `bg`, `blkid`, `buildah`, `cal`, `calendar`, `cat`, `cd`, `chmod`, `chgrp`, `chown`, `chrony`, `column`, `cp`, `crictl`, `crontab`, `curl`, `cut`, `date`, `dcmdump`, `df`, `diff`, `dig`, `dmesg`, `dnf`, `docker`, `docker-compose`, `dpkg`, `dpkg-query`, `dstat`, `du`, `emacs`, `env`, `exec`, `expand`, `export`, `fdisk`, `fg`, `file`, `find`, `flatpak`, `fmt`, `fold`, `free`, `git`, `git-branch`, `git-clone`, `git-commit`, `git-diff`, `git-log`, `git-merge`, `git-pull`, `git-push`, `git-status`, `gpg`, `grep`, `groups`, `gunzip`, `gzip`, `halt`, `head`, `helm`, `hexdump`, `history`, `host`, `htop`, `hwclock`, `hwinfo`, `id`, `ifconfig`, `init`, `iostat`, `iotop`, `ip`, `iptables`, `jobs`, `join`, `journalctl`, `kill`, `killall`, `kubectl`, `less`, `ln`, `locate`, `logger`, `logrotate`, `ls`, `lsblk`, `lscpu`, `lshw`, `lsmod`, `lsof`, `ltrace`, `md5sum`, `mesg`, `mkdir`, `mkfifo`, `modprobe`, `more`, `mount`, `mtr`, `mv`, `nano`, `nc`, `nethogs`, `netstat`, `nl`, `nmap`, `nohup`, `nslookup`, `ntpdate`, `od`, `openssl`, `parallel`, `parted`, `passwd`, `paste`, `patch`, `pgrep`, `ping`, `pkill`, `podman`, `poweroff`, `pr`, `printenv`, `ps`, `pwd`, `readlink`, `reboot`, `rm`, `rmdir`, `route`, `rpm`, `rsync`, `sar`, `scp`, `screen`, `sed`, `sensors`, `service`, `set`, `sha256sum`, `shutdown`, `skopeo`, `snap`, `sort`, `source`, `split`, `ss`, `ssh`, `stat`, `strace`, `strings`, `su`, `sudo`, `systemctl`, `tail`, `tar`, `tee`, `telnet`, `time`, `timedatectl`, `timeout`, `tmux`, `top`, `tr`, `traceroute`, `trap`, `tree`, `umask`, `umount`, `uname`, `unexpand`, `uniq`, `unset`, `unzip`, `uptime`, `useradd`, `usermod`, `vi`, `vim`, `vmstat`, `wall`, `watch`, `wc`, `wget`, `which`, `whoami`, `write`, `xargs`, `xxd`, `yes`, `yum`, `zcat`, `zdump`, `zip`
+`alias`, `apt`, `apt-cache`, `apt-get`, `at`, `awk`, `base64`, `bat`, `bg`, `blkid`, `buildah`, `cal`, `calendar`, `cat`, `cd`, `chmod`, `chgrp`, `chown`, `chrony`, `column`, `cp`, `crictl`, `crontab`, `curl`, `cut`, `date`, `dcmdump`, `df`, `diff`, `dig`, `dmesg`, `dnf`, `docker`, `docker-compose`, `dpkg`, `dpkg-query`, `dstat`, `du`, `emacs`, `env`, `exa`, `exec`, `expand`, `export`, `fd`, `fdisk`, `fg`, `file`, `find`, `flatpak`, `fmt`, `fold`, `free`, `fzf`, `git`, `git-branch`, `git-clone`, `git-commit`, `git-diff`, `git-log`, `git-merge`, `git-pull`, `git-push`, `git-status`, `goaccess`, `gpg`, `grep`, `groups`, `gunzip`, `gzip`, `halt`, `head`, `helm`, `hexdump`, `history`, `host`, `htop`, `hwclock`, `hwinfo`, `id`, `ifconfig`, `init`, `iostat`, `iotop`, `ip`, `iptables`, `jobs`, `join`, `journalctl`, `jq`, `kill`, `killall`, `kubectl`, `less`, `ln`, `locate`, `logger`, `logrotate`, `ls`, `lsblk`, `lscpu`, `lshw`, `lsmod`, `lsof`, `ltrace`, `md5sum`, `mesg`, `mkdir`, `mkfifo`, `modprobe`, `more`, `mount`, `mtr`, `multitail`, `mv`, `nano`, `nc`, `nethogs`, `netstat`, `nl`, `nmap`, `nohup`, `nslookup`, `ntpdate`, `od`, `openssl`, `parallel`, `parted`, `passwd`, `paste`, `patch`, `pgrep`, `ping`, `pkill`, `podman`, `poweroff`, `pr`, `printenv`, `ps`, `pwd`, `readlink`, `reboot`, `rg`, `ripgrep`, `rm`, `rmdir`, `route`, `rpm`, `rsync`, `sar`, `scp`, `screen`, `sed`, `sensors`, `service`, `set`, `sha256sum`, `shutdown`, `skopeo`, `snap`, `sort`, `source`, `split`, `ss`, `ssh`, `stat`, `strace`, `strings`, `su`, `sudo`, `systemctl`, `tail`, `tar`, `tee`, `telnet`, `time`, `timedatectl`, `timeout`, `tmux`, `tmuxinator`, `top`, `tr`, `traceroute`, `trap`, `tree`, `umask`, `umount`, `uname`, `unexpand`, `uniq`, `unset`, `unzip`, `uptime`, `useradd`, `usermod`, `vi`, `vim`, `vmstat`, `wall`, `watch`, `wc`, `wget`, `which`, `whoami`, `write`, `xargs`, `xclip`, `xsel`, `xxd`, `yes`, `yum`, `zcat`, `zdump`, `zip`, `zoxide`
 
 ---
 
-## Przydatne przykłady użycia
+## Przykłady użycia
 
 ### Pomoc i dokumentacja
 ```bash
@@ -499,108 +523,93 @@ git pull origin main        # pobierz zmiany
 git clone https://github.com/user/repo.git
 ```
 
-### Zaawansowane przykłady Data Science
+### Praca ze schowkiem (xclip)
 ```bash
-# Monitoring procesów ML
-watch -n 10 'ps aux | grep python | grep -E "(train|pytorch|tensorflow)" | 
-             awk "{print \$2, \$3, \$4, \$11}" | column -t'
+# Kopiowanie do schowka
+echo "Hello World" | xclip -selection clipboard
+ls -la | xclip -sel c                    # krótsza forma
 
-# Automatyzacja backup'ów eksperymentów
-find /experiments -name "*.pkl" -newer /tmp/last_backup -print0 | \
-xargs -0 tar -czf /backups/models_$(date +%Y%m%d).tar.gz
+# Wklejanie ze schowka
+xclip -selection clipboard -o
+xclip -sel c -o                          # krótsza forma
 
-# Analiza logów treningu w czasie rzeczywistym
-tail -f /var/log/training.log | grep -E "(loss|accuracy)" | \
-awk '{print strftime("%H:%M:%S"), $0}' | tee training_metrics.log
-```
+# Kopiowanie zawartości pliku
+xclip -sel c < file.txt
+cat config.txt | xclip -sel c
 
-### Zaawansowane przykłady DevOps
-```bash
-# Health check serwisów z alertami
-monitor_services() {
-    services=(nginx mysql redis)
-    for service in "${services[@]}"; do
-        if ! systemctl is-active --quiet $service; then
-            echo "ALERT: $service is down" | logger -t monitoring
-            systemctl restart $service
-        fi
-    done
-}
+# Kopiowanie outputu komend
+pwd | xclip -sel c                       # skopiuj bieżący katalog
+git log --oneline -5 | xclip -sel c      # skopiuj ostatnie 5 commitów
+docker ps | xclip -sel c                 # skopiuj listę kontenerów
 
-# Deployment z rollback
-deploy_with_rollback() {
-    local app=$1
-    local version=$2
-    
-    # Backup aktualnej wersji
-    docker tag $app:latest $app:rollback
-    
-    # Deploy nowej wersji
-    docker pull $app:$version
-    docker tag $app:$version $app:latest
-    docker-compose up -d $app
-    
-    # Health check
-    sleep 10
-    if ! curl -f http://localhost/health; then
-        echo "Deploy failed, rolling back..."
-        docker tag $app:rollback $app:latest
-        docker-compose up -d $app
+# Przydatne aliasy
+alias clip='xclip -selection clipboard'
+alias paste='xclip -selection clipboard -o'
+
+# Funkcje pomocnicze
+copy_file() {
+    if [ -f "$1" ]; then
+        cat "$1" | xclip -sel c
+        echo "Skopiowano zawartość pliku $1 do schowka"
+    else
+        echo "Plik $1 nie istnieje"
     fi
 }
 
-# Automatyzacja certyfikatów Let's Encrypt
-certbot_auto_renew() {
-    certbot renew --quiet
-    if [ $? -eq 0 ]; then
-        systemctl reload nginx
-        logger -t certbot "Certificates renewed successfully"
-    fi
+# Kopiowanie wyników komend z formatowaniem
+copy_system_info() {
+    {
+        echo "=== System Info ==="
+        uname -a
+        echo "=== Memory ==="
+        free -h
+        echo "=== Disk ==="
+        df -h
+    } | xclip -sel c
+}
+```
+
+### Zaawansowane monitorowanie logów (multitail)
+```bash
+# Podstawowe użycie multitail
+multitail /var/log/syslog /var/log/auth.log
+
+# Monitorowanie logów z kolorami
+multitail -c /var/log/apache2/access.log /var/log/apache2/error.log
+
+# Filtrowanie logów w czasie rzeczywistym
+multitail -s 2 /var/log/syslog           # odświeżanie co 2 sekundy
+multitail -f /var/log/nginx/access.log   # follow mode
+
+# Monitorowanie logów Docker
+multitail -l 'docker logs -f container1' -l 'docker logs -f container2'
+
+# Monitorowanie logów systemd
+multitail -l 'journalctl -f -u nginx' -l 'journalctl -f -u mysql'
+
+# Podział ekranu na więcej okien
+multitail -s 3 /var/log/syslog /var/log/auth.log /var/log/kern.log
+
+# Zastosowanie filtrów
+multitail /var/log/syslog -E "ERROR|CRITICAL"  # tylko błędy
+multitail /var/log/apache2/access.log -e "404|500"  # tylko błędy HTTP
+
+# Konfiguracja kolorów i formatowania
+cat > ~/.multitailrc << 'EOF'
+colorscheme:apache
+cs_re:red:ERROR
+cs_re:yellow:WARNING
+cs_re:green:INFO
+EOF
+
+# Monitoring logów aplikacji Python/Django
+monitor_app_logs() {
+    multitail \
+        -l "tail -f /var/log/myapp/django.log" \
+        -l "tail -f /var/log/myapp/celery.log" \
+        -l "tail -f /var/log/nginx/myapp_access.log" \
+        -l "tail -f /var/log/nginx/myapp_error.log"
 }
 
-# Dodaj do crontab
-# 0 3 * * * /usr/local/bin/certbot_auto_renew
-```
-
-### Snapy i Flatpak
-```bash
-# Snap packages
-snap list                    # zainstalowane snapy
-snap find firefox            # wyszukaj snap
-snap install code --classic # instaluj z uprawnieniami
-snap refresh                 # aktualizuj wszystkie
-snap remove firefox          # usuń snap
-
-# Flatpak packages
-flatpak list                 # zainstalowane flatpaki
-flatpak search gimp          # wyszukaj aplikację
-flatpak install flathub org.gimp.GIMP
-flatpak run org.gimp.GIMP    # uruchom aplikację
-flatpak update               # aktualizuj wszystkie
-```
-
-### Kombinacje przydatne w codziennej pracy
-```bash
-# Znajdź największe pliki w systemie
-find / -type f -size +100M 2>/dev/null | xargs ls -lh | sort -k5 -hr | head -10
-
-# Monitoring użycia dysku w czasie rzeczywistym
-watch -n 5 'df -h | grep -E "(Filesystem|/dev/)" | column -t'
-
-# Synchronizacja z backupem i logowaniem
-rsync -avz --progress /home/user/ /backup/user/ | tee backup_$(date +%Y%m%d).log
-
-# Automatyczne czyszczenie logów starszych niż 30 dni
-find /var/log -name "*.log" -mtime +30 -exec rm {} \; 2>/dev/null
-
-# Git status wszystkich repozytoriów w katalogu
-find ~/projects -name ".git" -type d | while read repo; do
-    echo "Repository: $(dirname $repo)"
-    cd $(dirname $repo) && git status --porcelain
-    echo "---"
-done
-```
-
----
-
-*Lista zawiera 197 najważniejszych komend bash/Linux pogrupowanych tematycznie dla łatwiejszego uczenia się i zapamiętywania. Dodano nowe kategorie: Zarządzanie pakietami, Czas i kalendarz, Konteneryzacja, Git i kontrola wersji oraz Pomoc i dokumentacja.*
+# Analiza logów w czasie rzeczywistym z alertami
+multitail -l 

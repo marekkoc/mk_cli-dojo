@@ -189,3 +189,60 @@ echo "Spakowano $(tar -tzf backup_$(date +%Y%m%d_%H%M).tar.gz | wc -l) plików"
 ```bash
 --preserve-permissions --same-owner --xattrs
 ```
+
+# Komendy do sprawdzania archiwum
+
+Oto przydatne komendy tar.gz do sprawdzania archiwów:
+
+## Sprawdzanie zawartości archiwum
+```bash
+# Wyświetl listę plików w archiwum
+tar -tzf archiwum.tar.gz
+
+# Wyświetl szczegółową listę z prawami dostępu, datami itp.
+tar -tvzf archiwum.tar.gz
+
+# Wyświetl tylko nazwy katalogów
+tar -tzf archiwum.tar.gz | grep '/$'
+```
+
+## Testowanie integralności archiwum
+```bash
+# Sprawdź czy archiwum nie jest uszkodzone
+tar -tzf archiwum.tar.gz > /dev/null
+
+# Bardziej szczegółowe sprawdzenie
+gzip -t archiwum.tar.gz
+```
+
+## Wyszukiwanie w archiwum
+```bash
+# Znajdź konkretny plik
+tar -tzf archiwum.tar.gz | grep "nazwa_pliku"
+
+# Znajdź pliki z określonym rozszerzeniem
+tar -tzf archiwum.tar.gz | grep '\.py$'
+
+# Policz ile plików jest w archiwum
+tar -tzf archiwum.tar.gz | wc -l
+```
+
+## Sprawdzanie rozmiaru
+```bash
+# Rozmiar archiwum
+ls -lh archiwum.tar.gz
+
+# Rozmiar po rozpakowaniu (przybliżony)
+tar -tzf archiwum.tar.gz | xargs -I {} stat --format="%s" {} 2>/dev/null | awk '{sum+=$1} END {print sum/1024/1024 " MB"}'
+```
+
+## Częściowe wyświetlanie zawartości
+```bash
+# Wyświetl zawartość konkretnego pliku bez rozpakowywania
+tar -xzf archiwum.tar.gz --to-stdout ścieżka/do/pliku.txt
+
+# Wyświetl pierwsze 10 plików
+tar -tzf archiwum.tar.gz | head -10
+```
+
+Najczęściej używane to `tar -tzf` do szybkiego podglądu zawartości i `tar -tvzf` do szczegółowych informacji o plikach.

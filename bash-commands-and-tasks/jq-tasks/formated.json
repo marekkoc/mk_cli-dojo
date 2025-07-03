@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "command": [
+      "find"
+    ],
+    "difficulty": 2,
+    "rating": 3,
+    "category": "file management",
+    "tags": [
+      "size",
+      "modification",
+      "cleanup"
+    ],
+    "task": "Find all files in home directory modified in last 7 days and larger than 10MB",
+    "solution": "find ~ -type f -mtime -7 -size +10M",
+    "explanation": "find ~ (search in home directory) -type f (files only, not directories) -mtime -7 (modified within last 7 days, negative value means 'less than N days ago') -size +10M (size greater than 10 megabytes)",
+    "execution_time": "< 1 min",
+    "requirements": null,
+    "warnings": null,
+    "use_case": "Identify large files that were recently created or modified for cleanup"
+  },
+  {
+    "id": 2,
+    "command": [
+      "find"
+    ],
+    "difficulty": 3,
+    "rating": 4,
+    "category": "file management",
+    "tags": [
+      "empty",
+      "cleanup",
+      "git"
+    ],
+    "task": "Find and remove all empty directories in current project, excluding .git directories",
+    "solution": "find . -type d -empty -not -path \"*/.git/*\" -delete",
+    "explanation": "find . (current directory) -type d (directories only) -empty (completely empty directories) -not -path '*/.git/*' (exclude .git subdirectories) -delete (remove found directories). The -not operator negates the path condition.",
+    "execution_time": "< 1 min",
+    "requirements": null,
+    "warnings": "Always test with -print first before using -delete",
+    "use_case": "Clean up project structure by removing empty directories"
+  },
+  {
+    "id": 3,
+    "command": [
+      "find",
+      "python"
+    ],
+    "difficulty": 4,
+    "rating": 5,
+    "category": "development",
+    "tags": [
+      "python",
+      "syntax",
+      "validation"
+    ],
+    "task": "Find all Python files and check which ones have syntax errors",
+    "solution": "find . -name \"*.py\" -exec python -m py_compile {} \\; -print 2>&1 | grep -B1 \"SyntaxError\"",
+    "explanation": "find . -name '*.py' (locate Python files) -exec python -m py_compile {} \\; (compile each file to check syntax, {} is placeholder for filename) -print (show filename after execution) 2>&1 (redirect stderr to stdout) | grep -B1 'SyntaxError' (show syntax errors with 1 line before for context)",
+    "execution_time": "1-5 min",
+    "requirements": [
+      "python"
+    ],
+    "warnings": null,
+    "use_case": "Validate Python code syntax before committing to repository"
+  }
+]

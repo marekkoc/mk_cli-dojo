@@ -1,0 +1,1400 @@
+{
+  "id": 1,
+  "task": "Find all files in home directory modified in last 7 days and larger than 10MB"
+}
+{
+  "id": 2,
+  "task": "Find and remove all empty directories in current project, excluding .git directories"
+}
+{
+  "id": 3,
+  "task": "Find all Python files and check which ones have syntax errors"
+}
+{
+  "id": 4,
+  "task": "Find duplicate files in Downloads directory based on MD5 hash"
+}
+{
+  "id": 5,
+  "task": "Find all executable files without extension in system directories"
+}
+{
+  "id": 6,
+  "task": "Find the largest file in each subdirectory"
+}
+{
+  "id": 7,
+  "task": "Find files with world-writable permissions (security risk)"
+}
+{
+  "id": 8,
+  "task": "Find log files older than 30 days and compress them into archive"
+}
+{
+  "id": 9,
+  "task": "Find files with spaces or non-ASCII characters in their names"
+}
+{
+  "id": 10,
+  "task": "Monitor directory for newly created Python files in real-time"
+}
+{
+  "id": 11,
+  "task": "Find all email addresses in text files"
+}
+{
+  "id": 12,
+  "task": "Find most frequent IP addresses in log files"
+}
+{
+  "id": 13,
+  "task": "Find function definitions in Python files with 3 lines of context"
+}
+{
+  "id": 14,
+  "task": "Calculate sum of values in specific column of CSV file"
+}
+{
+  "id": 15,
+  "task": "Group CSV data by column and calculate average for each group"
+}
+{
+  "id": 16,
+  "task": "Remove duplicate consecutive blank lines from text file"
+}
+{
+  "id": 17,
+  "task": "Replace all email addresses with 'REDACTED' in text files"
+}
+{
+  "id": 18,
+  "task": "Extract lines between two patterns from a file"
+}
+{
+  "id": 19,
+  "task": "Pretty print JSON by adding proper indentation"
+}
+{
+  "id": 20,
+  "task": "Find Python files and calculate average lines of code per function"
+}
+{
+  "id": 21,
+  "task": "Find and count duplicate lines in a file"
+}
+{
+  "id": 22,
+  "task": "Extract unique values from specific column in CSV file"
+}
+{
+  "id": 23,
+  "task": "Find most frequently used words in text file"
+}
+{
+  "id": 24,
+  "task": "Count total lines of code in all Python files"
+}
+{
+  "id": 25,
+  "task": "Analyze error patterns in log files and show top 5 error types"
+}
+{
+  "id": 26,
+  "task": "Find all DICOM files and display their basic metadata"
+}
+{
+  "id": 27,
+  "task": "Find DICOM files containing specific patient information"
+}
+{
+  "id": 28,
+  "task": "Count DICOM files by imaging modality (CT, MRI, X-Ray, etc.)"
+}
+{
+  "id": 29,
+  "task": "Convert all DICOM files to different transfer syntax"
+}
+{
+  "id": 30,
+  "task": "Extract and organize DICOM files by Series Instance UID"
+}
+{
+  "id": 31,
+  "task": "Find corrupted or invalid DICOM files"
+}
+{
+  "id": 32,
+  "task": "Convert DICOM series to NIfTI format for neuroimaging analysis"
+}
+{
+  "id": 33,
+  "task": "Sort DICOM files by acquisition date and time"
+}
+{
+  "id": 34,
+  "task": "Anonymize DICOM files by removing patient identifying information"
+}
+{
+  "id": 35,
+  "task": "Calculate average slice thickness across all DICOM images"
+}
+{
+  "id": 36,
+  "task": "Count DICOM images with contrast enhancement"
+}
+{
+  "id": 37,
+  "task": "List all imaging equipment manufacturers in DICOM dataset"
+}
+{
+  "id": 38,
+  "task": "Generate PNG preview images from DICOM files for quick review"
+}
+{
+  "id": 39,
+  "task": "Find DICOM images of specific body parts or anatomical regions"
+}
+{
+  "id": 40,
+  "task": "Calculate total radiation dose across all CT DICOM studies"
+}
+{
+  "id": 41,
+  "task": "Extract all email addresses from a JSON file containing user data"
+}
+{
+  "id": 42,
+  "task": "Filter JSON array to show only items where price is greater than 100"
+}
+{
+  "id": 43,
+  "task": "Group JSON data by category and calculate average price for each group"
+}
+{
+  "id": 44,
+  "task": "Flatten nested JSON structure and extract specific nested fields"
+}
+{
+  "id": 45,
+  "task": "Monitor API endpoint and extract error responses in real-time"
+}
+{
+  "id": 46,
+  "task": "Synchronize local directory with remote server, showing progress"
+}
+{
+  "id": 47,
+  "task": "Sync directory while excluding temporary files and maintaining deletions"
+}
+{
+  "id": 48,
+  "task": "Resume interrupted large file transfer with bandwidth limiting"
+}
+{
+  "id": 49,
+  "task": "Create compressed archive of directory with current date in filename"
+}
+{
+  "id": 50,
+  "task": "Create archive excluding specific file patterns and showing progress"
+}
+{
+  "id": 51,
+  "task": "Create incremental backup of files modified in last 7 days"
+}
+{
+  "id": 52,
+  "task": "Make authenticated API request and save response to file"
+}
+{
+  "id": 53,
+  "task": "Check API health status and alert if service is down"
+}
+{
+  "id": 54,
+  "task": "Download multiple files in parallel with retry logic"
+}
+{
+  "id": 55,
+  "task": "Process multiple files in parallel using all CPU cores"
+}
+{
+  "id": 56,
+  "task": "Resize all images in directory using parallel processing"
+}
+{
+  "id": 57,
+  "task": "Compress log files in parallel while preserving directory structure"
+}
+{
+  "id": 58,
+  "task": "Monitor disk usage in real-time with color highlighting"
+}
+{
+  "id": 59,
+  "task": "Monitor memory usage of specific process in real-time"
+}
+{
+  "id": 60,
+  "task": "Search for specific text pattern across entire Git history"
+}
+{
+  "id": 61,
+  "task": "Find and remove large files from Git history to reduce repository size"
+}
+{
+  "id": 62,
+  "task": "Generate contributor statistics showing lines added/removed per author"
+}
+{
+  "id": 63,
+  "task": "Create SSH tunnel to access remote database through bastion host"
+}
+{
+  "id": 64,
+  "task": "Execute complex command on multiple remote servers simultaneously"
+}
+{
+  "id": 65,
+  "task": "Schedule automated cleanup of old log files every night at 2 AM"
+}
+{
+  "id": 66,
+  "task": "Schedule daily incremental backups with email notifications"
+}
+{
+  "id": 67,
+  "task": "Compare two configuration files and show only the differences"
+}
+{
+  "id": 68,
+  "task": "Find files that exist in one directory but not another"
+}
+{
+  "id": 69,
+  "task": "Batch convert images to different format with quality optimization"
+}
+{
+  "id": 70,
+  "task": "Extract and analyze image metadata from photo collection"
+}
+{
+  "id": 71,
+  "task": "Batch convert video files to web-optimized format"
+}
+{
+  "id": 72,
+  "task": "Calculate total duration of all video files in directory tree"
+}
+{
+  "id": 73,
+  "task": "Monitor processes consuming more than 10% CPU and log them"
+}
+{
+  "id": 74,
+  "task": "Analyze network connections and show top connecting IP addresses"
+}
+{
+  "id": 75,
+  "task": "Calculate business days between two dates excluding weekends"
+}
+{
+  "id": 76,
+  "task": "List files with detailed information including permissions, owner, size and modification time"
+}
+{
+  "id": 77,
+  "task": "List files sorted by size in human-readable format, largest first"
+}
+{
+  "id": 78,
+  "task": "List files sorted by modification time, newest first"
+}
+{
+  "id": 79,
+  "task": "Display directory tree structure with file details recursively"
+}
+{
+  "id": 80,
+  "task": "List only hidden files (starting with dot) in current directory"
+}
+{
+  "id": 81,
+  "task": "List only directories in current location"
+}
+{
+  "id": 82,
+  "task": "List files with color coding and file type indicators"
+}
+{
+  "id": 83,
+  "task": "Display files with inode numbers and link count information"
+}
+{
+  "id": 84,
+  "task": "List only executable files in current directory"
+}
+{
+  "id": 85,
+  "task": "Calculate total size of all files in directory using ls output"
+}
+{
+  "id": 86,
+  "task": "List files in single column format for easy script processing"
+}
+{
+  "id": 87,
+  "task": "Display files with access time instead of modification time"
+}
+{
+  "id": 88,
+  "task": "Show the 5 most recently modified files in directory"
+}
+{
+  "id": 89,
+  "task": "Count total number of files and directories in current location"
+}
+{
+  "id": 90,
+  "task": "List files in reverse chronological order (oldest first) with full details"
+}
+{
+  "id": 91,
+  "task": "Create a symbolic link to a file in different directory"
+}
+{
+  "id": 92,
+  "task": "Create hard link and verify both files share same inode"
+}
+{
+  "id": 93,
+  "task": "Find and list all broken symbolic links in directory tree"
+}
+{
+  "id": 94,
+  "task": "Display the target of a symbolic link with full path resolution"
+}
+{
+  "id": 95,
+  "task": "Determine file type and format of unknown file"
+}
+{
+  "id": 96,
+  "task": "Display comprehensive file metadata including all timestamps"
+}
+{
+  "id": 97,
+  "task": "Identify file types for all files in directory recursively"
+}
+{
+  "id": 98,
+  "task": "Check default application for file type and open file with it"
+}
+{
+  "id": 99,
+  "task": "Extract specific columns from space-separated file and print them"
+}
+{
+  "id": 100,
+  "task": "Print lines where column 2 is greater than column 3"
+}
+{
+  "id": 101,
+  "task": "Add line numbers to text file with custom formatting"
+}
+{
+  "id": 102,
+  "task": "Process lines between two patterns and perform calculations"
+}
+{
+  "id": 103,
+  "task": "Make a script executable for owner, readable for group and others"
+}
+{
+  "id": 104,
+  "task": "Recursively change permissions for all files and directories"
+}
+{
+  "id": 105,
+  "task": "Change file owner to specific user and group"
+}
+{
+  "id": 106,
+  "task": "Change ownership of all files belonging to specific user"
+}
+{
+  "id": 107,
+  "task": "Create new user with home directory and specific shell"
+}
+{
+  "id": 108,
+  "task": "Create new group and add existing user to it"
+}
+{
+  "id": 109,
+  "task": "Display current user ID and all group memberships"
+}
+{
+  "id": 110,
+  "task": "List all groups and find members of specific group"
+}
+{
+  "id": 111,
+  "task": "List all active background jobs with their status"
+}
+{
+  "id": 112,
+  "task": "Move stopped job to background and then bring it to foreground"
+}
+{
+  "id": 113,
+  "task": "Gracefully terminate process by PID using TERM signal"
+}
+{
+  "id": 114,
+  "task": "Find and kill all processes matching specific name pattern"
+}
+{
+  "id": 115,
+  "task": "Kill all processes with specific name using killall"
+}
+{
+  "id": 116,
+  "task": "Display all running processes with detailed information"
+}
+{
+  "id": 117,
+  "task": "Show top 10 processes consuming most memory"
+}
+{
+  "id": 118,
+  "task": "Find specific process and display its details"
+}
+{
+  "id": 119,
+  "task": "Calculate MD5 checksum of file for integrity verification"
+}
+{
+  "id": 120,
+  "task": "Create checksum file for all files in directory and verify later"
+}
+{
+  "id": 121,
+  "task": "Compare MD5 and SHA256 checksums of same file"
+}
+{
+  "id": 122,
+  "task": "Create password-protected ZIP archive of directory"
+}
+{
+  "id": 123,
+  "task": "Extract ZIP archive and list contents without extracting"
+}
+{
+  "id": 124,
+  "task": "Compress large file and then decompress it"
+}
+{
+  "id": 125,
+  "task": "Create compressed tar archive with progress indication"
+}
+{
+  "id": 126,
+  "task": "Display available disk space in human-readable format"
+}
+{
+  "id": 127,
+  "task": "Show disk usage percentage and highlight filesystems over 80% full"
+}
+{
+  "id": 128,
+  "task": "Show size of each subdirectory in current location"
+}
+{
+  "id": 129,
+  "task": "Find and display 10 largest directories recursively"
+}
+{
+  "id": 130,
+  "task": "Find directories larger than 1GB and show their contents size"
+}
+{
+  "id": 131,
+  "task": "List all disk partitions and their sizes"
+}
+{
+  "id": 132,
+  "task": "Display block devices in tree format with filesystem information"
+}
+{
+  "id": 133,
+  "task": "Display detailed partition information including partition table type"
+}
+{
+  "id": 134,
+  "task": "Display UUID and filesystem type for all partitions"
+}
+{
+  "id": 135,
+  "task": "Mount USB drive to specific directory and verify mount"
+}
+{
+  "id": 136,
+  "task": "Safely unmount filesystem and verify it's no longer mounted"
+}
+{
+  "id": 137,
+  "task": "Display only currently mounted filesystems excluding virtual ones"
+}
+{
+  "id": 138,
+  "task": "Add permanent mount entry to fstab and test mount"
+}
+{
+  "id": 139,
+  "task": "Monitor system in real-time and sort processes by memory usage"
+}
+{
+  "id": 140,
+  "task": "Use interactive process viewer with color coding and tree view"
+}
+{
+  "id": 141,
+  "task": "Run command that continues after logout and redirect output"
+}
+{
+  "id": 142,
+  "task": "Create detachable terminal session and reconnect to it"
+}
+{
+  "id": 143,
+  "task": "Create tmux session with multiple panes and windows"
+}
+{
+  "id": 144,
+  "task": "Schedule script to run every day at 3 AM and list current cron jobs"
+}
+{
+  "id": 145,
+  "task": "Schedule one-time command to run at specific time"
+}
+{
+  "id": 146,
+  "task": "Display system uptime and current load averages"
+}
+{
+  "id": 147,
+  "task": "Display memory usage in human-readable format"
+}
+{
+  "id": 148,
+  "task": "Monitor disk I/O statistics in real-time"
+}
+{
+  "id": 149,
+  "task": "List all files opened by specific process and network connections"
+}
+{
+  "id": 150,
+  "task": "Find location of command binary and related files"
+}
+{
+  "id": 151,
+  "task": "Display the contents of a file with line numbers"
+}
+{
+  "id": 152,
+  "task": "Concatenate multiple files into a single output file"
+}
+{
+  "id": 153,
+  "task": "Create a multi-line file using cat with here document"
+}
+{
+  "id": 154,
+  "task": "Display file content showing tabs as ^I and line endings"
+}
+{
+  "id": 155,
+  "task": "Create multiple empty files at once"
+}
+{
+  "id": 156,
+  "task": "Update file timestamp to current time without changing content"
+}
+{
+  "id": 157,
+  "task": "Create file with specific timestamp from the past"
+}
+{
+  "id": 158,
+  "task": "Display the last 20 lines of a log file"
+}
+{
+  "id": 159,
+  "task": "Monitor log file in real-time showing new lines as they appear"
+}
+{
+  "id": 160,
+  "task": "Monitor log file in real-time and show only error messages"
+}
+{
+  "id": 161,
+  "task": "Display the first 15 lines of a large data file"
+}
+{
+  "id": 162,
+  "task": "Extract lines 10-20 from a file using head and tail combination"
+}
+{
+  "id": 163,
+  "task": "Create a JSON object from command line with multiple fields"
+}
+{
+  "id": 164,
+  "task": "Build JSON array from multiple input values"
+}
+{
+  "id": 165,
+  "task": "Navigate deeply nested JSON and extract specific values"
+}
+{
+  "id": 166,
+  "task": "Filter JSON with multiple conditions and logical operators"
+}
+{
+  "id": 167,
+  "task": "Transform JSON structure and rename fields with calculations"
+}
+{
+  "id": 168,
+  "task": "Merge multiple JSON files into single structure"
+}
+{
+  "id": 169,
+  "task": "Validate JSON structure and check for required fields"
+}
+{
+  "id": 170,
+  "task": "Calculate complex aggregations with grouping and statistics"
+}
+{
+  "id": 171,
+  "task": "Sort JSON array by multiple fields with custom ordering"
+}
+{
+  "id": 172,
+  "task": "Flatten nested JSON and create denormalized structure"
+}
+{
+  "id": 173,
+  "task": "Fetch API data and extract specific information with error handling"
+}
+{
+  "id": 174,
+  "task": "Analyze time series data and calculate trends"
+}
+{
+  "id": 175,
+  "task": "Clean JSON data by removing null values and empty objects"
+}
+{
+  "id": 176,
+  "task": "Convert CSV file to JSON format with proper field mapping"
+}
+{
+  "id": 177,
+  "task": "Convert JSON array to CSV with custom headers and formatting"
+}
+{
+  "id": 178,
+  "task": "Filter CSV rows based on multiple column conditions"
+}
+{
+  "id": 179,
+  "task": "Create pivot table from CSV data with sum aggregation"
+}
+{
+  "id": 180,
+  "task": "Validate CSV data and report inconsistencies"
+}
+{
+  "id": 181,
+  "task": "Calculate comprehensive statistics for CSV numeric columns"
+}
+{
+  "id": 182,
+  "task": "Remove duplicate rows from CSV file based on specific columns"
+}
+{
+  "id": 183,
+  "task": "Join two CSV files on common field like SQL join"
+}
+{
+  "id": 184,
+  "task": "Transform CSV columns with date formatting and calculations"
+}
+{
+  "id": 185,
+  "task": "Extract unique values from specific CSV column with counts"
+}
+{
+  "id": 186,
+  "task": "Find top N records in CSV based on numeric column with ties handling"
+}
+{
+  "id": 187,
+  "task": "Complex workflow: CSV to JSON transformation with validation and enrichment"
+}
+{
+  "id": 188,
+  "task": "Process nested JSON arrays and create flat summary report"
+}
+{
+  "id": 189,
+  "task": "Implement complex business logic with conditional transformations"
+}
+{
+  "id": 190,
+  "task": "Calculate moving averages and trends in time series CSV data"
+}
+{
+  "id": 191,
+  "task": "Process JSON with timestamp manipulation and date-based filtering"
+}
+{
+  "id": 192,
+  "task": "Create advanced data processing pipeline: CSV analysis to JSON report"
+}
+{
+  "id": 193,
+  "task": "Print numbers from 1 to 10 using for loop"
+}
+{
+  "id": 194,
+  "task": "Rename all .txt files by adding current date prefix"
+}
+{
+  "id": 195,
+  "task": "Create project directory structure for months of the year"
+}
+{
+  "id": 196,
+  "task": "Create multiple numbered backups of important file"
+}
+{
+  "id": 197,
+  "task": "Find and compress all log files in multiple directories"
+}
+{
+  "id": 198,
+  "task": "Check multiple website endpoints and report status"
+}
+{
+  "id": 199,
+  "task": "Deploy script to multiple servers and execute remotely"
+}
+{
+  "id": 200,
+  "task": "Process multiple CSV files and generate summary report"
+}
+{
+  "id": 201,
+  "task": "Monitor file size and alert when it exceeds limit"
+}
+{
+  "id": 202,
+  "task": "Read file line by line and process each line with custom logic"
+}
+{
+  "id": 203,
+  "task": "Monitor specific process and restart if it stops running"
+}
+{
+  "id": 204,
+  "task": "Monitor network connections and log suspicious activity"
+}
+{
+  "id": 205,
+  "task": "Update multiple git repositories in parallel"
+}
+{
+  "id": 206,
+  "task": "Monitor disk usage and send alert when threshold exceeded"
+}
+{
+  "id": 207,
+  "task": "Batch resize and optimize images with different sizes"
+}
+{
+  "id": 208,
+  "task": "Monitor log file for error patterns and trigger actions"
+}
+{
+  "id": 209,
+  "task": "Fetch and merge data from multiple API endpoints"
+}
+{
+  "id": 210,
+  "task": "Watch directory for file changes and auto-process new files"
+}
+{
+  "id": 211,
+  "task": "Analyze multiple log files and generate comprehensive report"
+}
+{
+  "id": 212,
+  "task": "Read CSV file and insert data into database with error handling"
+}
+{
+  "id": 213,
+  "task": "Process large dataset files in parallel with load balancing"
+}
+{
+  "id": 214,
+  "task": "Create system load monitoring script with threshold alerts"
+}
+{
+  "id": 215,
+  "task": "Synchronize multiple directory pairs with incremental backup"
+}
+{
+  "id": 216,
+  "task": "Monitor network connectivity and measure response times"
+}
+{
+  "id": 217,
+  "task": "Complex nested loop for directory cleanup with age-based archiving"
+}
+{
+  "id": 218,
+  "task": "Display current date in various formats for logging and file naming"
+}
+{
+  "id": 219,
+  "task": "Calculate dates relative to current date for backup rotation"
+}
+{
+  "id": 220,
+  "task": "Create git commit with formatted timestamp and automated message"
+}
+{
+  "id": 221,
+  "task": "Analyze git commits from specific date range and generate report"
+}
+{
+  "id": 222,
+  "task": "Find and archive files older than specific date using date calculations"
+}
+{
+  "id": 223,
+  "task": "Create feature branch with date-based naming and initial commit"
+}
+{
+  "id": 224,
+  "task": "Create cron job for daily backups with date-based file naming"
+}
+{
+  "id": 225,
+  "task": "Create release tag with version numbering based on date and commit count"
+}
+{
+  "id": 226,
+  "task": "Analyze log files for entries within specific time window"
+}
+{
+  "id": 227,
+  "task": "Generate development productivity report with date-based metrics"
+}
+{
+  "id": 228,
+  "task": "Create database backup with timestamp and retention management"
+}
+{
+  "id": 229,
+  "task": "Automated daily standup report from git activity with date filtering"
+}
+{
+  "id": 230,
+  "task": "Generate comprehensive project status report in JSON format with date analytics"
+}
+{
+  "id": 231,
+  "task": "Extract all error messages from Apache log with timestamps"
+}
+{
+  "id": 232,
+  "task": "Analyze top IP addresses by request count with bandwidth usage"
+}
+{
+  "id": 233,
+  "task": "Generate hourly traffic statistics from log files"
+}
+{
+  "id": 234,
+  "task": "Detect potential security attacks in web server logs"
+}
+{
+  "id": 235,
+  "task": "Calculate response time statistics and identify slow requests"
+}
+{
+  "id": 236,
+  "task": "Parse rotated logs and extract entries from specific date range"
+}
+{
+  "id": 237,
+  "task": "Parse JSON application logs and extract error details with context"
+}
+{
+  "id": 238,
+  "task": "Generate traffic visualization from log data"
+}
+{
+  "id": 239,
+  "task": "Analyze geographic distribution of web traffic"
+}
+{
+  "id": 240,
+  "task": "Monitor error rate and send alerts when threshold exceeded"
+}
+{
+  "id": 241,
+  "task": "Anonymize log files by masking IP addresses and sensitive data"
+}
+{
+  "id": 242,
+  "task": "Implement custom log rotation with size and age-based rules"
+}
+{
+  "id": 243,
+  "task": "Real-time monitoring of multiple log types with pattern detection"
+}
+{
+  "id": 244,
+  "task": "Import log data into SQLite database for complex analysis"
+}
+{
+  "id": 245,
+  "task": "Forward critical log events to external monitoring system via API"
+}
+{
+  "id": 246,
+  "task": "Correlate application errors with git deployment history"
+}
+{
+  "id": 247,
+  "task": "Parse and forward application logs to centralized syslog server"
+}
+{
+  "id": 248,
+  "task": "Extract metrics from logs and expose in Prometheus format"
+}
+{
+  "id": 249,
+  "task": "Prepare logs for ELK stack ingestion with structured formatting"
+}
+{
+  "id": 250,
+  "task": "Extract features from logs for machine learning anomaly detection"
+}
+{
+  "id": 251,
+  "task": "Download a webpage and save it to a file"
+}
+{
+  "id": 252,
+  "task": "Check HTTP headers of a website without downloading content"
+}
+{
+  "id": 253,
+  "task": "Send JSON data to an API endpoint using POST request"
+}
+{
+  "id": 254,
+  "task": "Access API with bearer token authentication"
+}
+{
+  "id": 255,
+  "task": "Download large file with progress bar and resume capability"
+}
+{
+  "id": 256,
+  "task": "Submit form data with multiple fields"
+}
+{
+  "id": 257,
+  "task": "Login and maintain session using cookies for subsequent requests"
+}
+{
+  "id": 258,
+  "task": "Upload file to server using multipart form data"
+}
+{
+  "id": 259,
+  "task": "Measure detailed timing information for HTTP request"
+}
+{
+  "id": 260,
+  "task": "Make request through SOCKS proxy with custom user agent"
+}
+{
+  "id": 261,
+  "task": "Fetch JSON data and extract specific fields using curl and jq"
+}
+{
+  "id": 262,
+  "task": "Download multiple files in parallel with different retry policies"
+}
+{
+  "id": 263,
+  "task": "Check SSL certificate details and save certificate chain"
+}
+{
+  "id": 264,
+  "task": "Make API calls with rate limiting and automatic retry on specific HTTP codes"
+}
+{
+  "id": 265,
+  "task": "Follow redirects and show the final URL destination"
+}
+{
+  "id": 266,
+  "task": "Fetch all pages of paginated API results and combine into single JSON file"
+}
+{
+  "id": 267,
+  "task": "Access API endpoint with basic authentication"
+}
+{
+  "id": 268,
+  "task": "Test webhook by sending POST data to local development server"
+}
+{
+  "id": 269,
+  "task": "Create health check script that tests multiple endpoints and reports status"
+}
+{
+  "id": 270,
+  "task": "Fetch API data, convert JSON to CSV, and save with timestamp"
+}
+{
+  "id": 271,
+  "task": "Pretty print and validate JSON file syntax"
+}
+{
+  "id": 272,
+  "task": "List all top-level keys in JSON object"
+}
+{
+  "id": 273,
+  "task": "Count number of items in JSON array"
+}
+{
+  "id": 274,
+  "task": "Extract specific field values from all array elements"
+}
+{
+  "id": 275,
+  "task": "Get first and last element from JSON array"
+}
+{
+  "id": 276,
+  "task": "Check if specific field exists in JSON object"
+}
+{
+  "id": 277,
+  "task": "Check data types of JSON values"
+}
+{
+  "id": 278,
+  "task": "Filter array elements by field value"
+}
+{
+  "id": 279,
+  "task": "Sort array elements by specific field"
+}
+{
+  "id": 280,
+  "task": "Transform array elements to new structure"
+}
+{
+  "id": 281,
+  "task": "Get unique values from specific field across array"
+}
+{
+  "id": 282,
+  "task": "Group array elements by field value"
+}
+{
+  "id": 283,
+  "task": "Find elements containing specific text in any field"
+}
+{
+  "id": 284,
+  "task": "Handle null values and provide defaults"
+}
+{
+  "id": 285,
+  "task": "Merge multiple JSON objects into one"
+}
+{
+  "id": 286,
+  "task": "Extract array slice and limit results"
+}
+{
+  "id": 287,
+  "task": "Find all paths to specific value in nested JSON"
+}
+{
+  "id": 288,
+  "task": "Recursively extract all values of specific key name"
+}
+{
+  "id": 289,
+  "task": "Calculate statistics from array of objects with multiple aggregations"
+}
+{
+  "id": 290,
+  "task": "Create custom function to process data with complex logic"
+}
+{
+  "id": 291,
+  "task": "Check status of a system service"
+}
+{
+  "id": 292,
+  "task": "Start a system service"
+}
+{
+  "id": 293,
+  "task": "Stop a running system service"
+}
+{
+  "id": 294,
+  "task": "Restart a service to apply configuration changes"
+}
+{
+  "id": 295,
+  "task": "Reload service configuration without stopping service"
+}
+{
+  "id": 296,
+  "task": "Enable service to start automatically at boot"
+}
+{
+  "id": 297,
+  "task": "Disable service from starting automatically at boot"
+}
+{
+  "id": 298,
+  "task": "Check if service is enabled for automatic startup"
+}
+{
+  "id": 299,
+  "task": "Check if service is currently running"
+}
+{
+  "id": 300,
+  "task": "List all system services and their states"
+}
+{
+  "id": 301,
+  "task": "List all failed services for troubleshooting"
+}
+{
+  "id": 302,
+  "task": "Show service dependencies and what depends on it"
+}
+{
+  "id": 303,
+  "task": "View logs for specific service"
+}
+{
+  "id": 304,
+  "task": "Follow service logs in real-time"
+}
+{
+  "id": 305,
+  "task": "View logs from specific time period"
+}
+{
+  "id": 306,
+  "task": "Filter logs by priority level (errors only)"
+}
+{
+  "id": 307,
+  "task": "Mask service to prevent it from being started"
+}
+{
+  "id": 308,
+  "task": "Create service override configuration"
+}
+{
+  "id": 309,
+  "task": "Reload systemd configuration after making changes"
+}
+{
+  "id": 310,
+  "task": "Create monitoring script to check service health and restart if needed"
+}
+{
+  "id": 311,
+  "task": "Check Docker version and system information"
+}
+{
+  "id": 312,
+  "task": "Download Docker image from registry"
+}
+{
+  "id": 313,
+  "task": "List all locally stored Docker images"
+}
+{
+  "id": 314,
+  "task": "Run simple container with interactive terminal"
+}
+{
+  "id": 315,
+  "task": "Run container in background (detached mode)"
+}
+{
+  "id": 316,
+  "task": "List running containers"
+}
+{
+  "id": 317,
+  "task": "Stop running container"
+}
+{
+  "id": 318,
+  "task": "Start stopped container"
+}
+{
+  "id": 319,
+  "task": "Remove stopped container"
+}
+{
+  "id": 320,
+  "task": "Run container with port mapping"
+}
+{
+  "id": 321,
+  "task": "Run container with volume mount for data persistence"
+}
+{
+  "id": 322,
+  "task": "Execute command inside running container"
+}
+{
+  "id": 323,
+  "task": "View container logs and follow in real-time"
+}
+{
+  "id": 324,
+  "task": "Inspect detailed container configuration"
+}
+{
+  "id": 325,
+  "task": "Build custom Docker image from Dockerfile"
+}
+{
+  "id": 326,
+  "task": "Run container with environment variables and resource limits"
+}
+{
+  "id": 327,
+  "task": "Create custom network and connect containers"
+}
+{
+  "id": 328,
+  "task": "Clean up unused Docker resources"
+}
+{
+  "id": 329,
+  "task": "Monitor container resource usage in real-time"
+}
+{
+  "id": 330,
+  "task": "Deploy multi-container application with health checks"
+}
+{
+  "id": 331,
+  "task": "Display basic DICOM file information"
+}
+{
+  "id": 332,
+  "task": "Extract specific patient information from DICOM file"
+}
+{
+  "id": 333,
+  "task": "Display study and series information"
+}
+{
+  "id": 334,
+  "task": "Extract image dimensions and pixel information"
+}
+{
+  "id": 335,
+  "task": "Extract equipment and acquisition parameters"
+}
+{
+  "id": 336,
+  "task": "Search for specific values in DICOM tags"
+}
+{
+  "id": 337,
+  "task": "Convert DICOM file to different transfer syntax"
+}
+{
+  "id": 338,
+  "task": "Compress DICOM file using JPEG compression"
+}
+{
+  "id": 339,
+  "task": "Remove patient identifying information from DICOM file"
+}
+{
+  "id": 340,
+  "task": "Update study date and description"
+}
+{
+  "id": 341,
+  "task": "Convert DICOM image to PNG format"
+}
+{
+  "id": 342,
+  "task": "Convert DICOM with specific window/level settings"
+}
+{
+  "id": 343,
+  "task": "Decompress JPEG-compressed DICOM and export as image"
+}
+{
+  "id": 344,
+  "task": "Validate DICOM file compliance with IOD standards"
+}
+{
+  "id": 345,
+  "task": "Generate structured filename from DICOM metadata"
+}
+{
+  "id": 346,
+  "task": "Test if file is valid DICOM format"
+}
+{
+  "id": 347,
+  "task": "Create DICOM media directory structure"
+}
+{
+  "id": 348,
+  "task": "Create DICOMDIR file for medical media"
+}
+{
+  "id": 349,
+  "task": "Send DICOM file to remote PACS server"
+}
+{
+  "id": 350,
+  "task": "Start DICOM receive server to accept incoming images"
+}
